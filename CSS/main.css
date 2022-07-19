@@ -1,3 +1,6 @@
+/* ---------------- */
+/* Global Style */
+/* ---------------- */
 @font-face {
     font-family: 'Roboto Flex';
     src: url(/ASSETS/FONTS/Roboto_Flex/RobotoFlex-VariableFont_GRAD\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf) format('woff2');
@@ -26,4 +29,27 @@ ul, li {
 body {
     background-color: var(--black);
     color: var(--white);
+}
+/* ---------------- */
+/* Fonts */
+/* ---------------- */
+.logo, a, p, .copy-email {
+    font-family: var(--space);
+}
+.logo, a, .copy-email {
+    text-transform: uppercase;
+}
+h1, h2, h3, h4, .btn {
+    font-family: var(--roboto);
+    text-transform: uppercase;
+}
+/* ---------------- */
+/* Fonts Logo*/
+/* ---------------- */
+.logo {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 97.5%;
+    letter-spacing: 0.28em;
 }
