@@ -1,11 +1,29 @@
+@font-face {
+    font-family: 'Roboto Flex';
+    src: url(/ASSETS/FONTS/Roboto_Flex/RobotoFlex-VariableFont_GRAD\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf) format('woff2');
+    font-family: 'Space Grotesk';
+    src: url(/ASSETS/FONTS/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf) format(woff2);
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --white: #ffffff;
+    --black: #121212;
+    --light-black: #1D2023;
+    --roboto: 'Roboto_Flex',sans-serif;
+    --space: 'Space Grotesk',sans-serif;
+}
 a {
     text-decoration: none;
+    color: var(--white);
 }
 ul, li {
     list-style: none;
+}
+body {
+    background-color: var(--black);
+    color: var(--white);
 }
