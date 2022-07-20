@@ -13,6 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 62.5%;
 }
 :root {
     --white: #ffffff;
@@ -52,7 +53,7 @@ h1, h2, h3, h4, .words-animation, .btn {
 /* ---------------- */
 .logo {
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 97.5%;
     letter-spacing: 0.28em;
 }
@@ -61,7 +62,7 @@ h1, h2, h3, h4, .words-animation, .btn {
 /* ---------------- */
 a {
     font-variation-settings: 'wght' 200;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 97.5%;
     letter-spacing: 0.2em;
 }
@@ -81,7 +82,7 @@ h1 {
         'YTAS' 750,
         'YTDE' -203,
         'YTFI' 738;
-    font-size: 268px;
+    font-size: 26.8rem;
     line-height: 86%;
     letter-spacing: 0.02em;
     font-stretch: 40;
@@ -99,7 +100,7 @@ h2 {
         'YTDE' -203,
         'YTFI' 738;
     font-weight: 420;
-    font-size: 240px;
+    font-size: 24rem;
     line-height: 97%;
     letter-spacing: 0.035em;
     font-stretch: 32;
@@ -118,7 +119,7 @@ h3,
         'ytde' -203,
         'ytfi' 738,
         'opsz' 78;
-    font-size: 88px;
+    font-size: 8.8rem;
     line-height: 79px;
     letter-spacing: 0.035em;
     text-align: center;
@@ -128,7 +129,7 @@ h3,
 /* ---------------- */
 .intro-line2 p, .about-content, .questions p {
     font-variation-settings: 'wght' 200;
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 138%;
     letter-spacing: 0.03em;
 }
@@ -138,7 +139,7 @@ h3,
 .scroll p {
     font-family: 'Space Grotesk';
     font-variation-settings: 'wght' 200;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 138%;
     letter-spacing: 0.03em;
     transform: rotate(-90deg);
@@ -148,7 +149,7 @@ h3,
 }
 .about-icon p, .projects-heading p, .project-content p, .contact-heading p {
     font-variation-settings: 'wght' 340;
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 110%;
     letter-spacing: 0.16em;
 }
@@ -158,7 +159,7 @@ h3,
 }
 .project-info p {
     font-variation-settings: 'wght' 340;
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 148%;
     text-align: right;
     letter-spacing: 0.03em;
@@ -168,7 +169,7 @@ h3,
 }
 .copy-email {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 110%;
     text-align: center;
     letter-spacing: 0.16em;
@@ -179,7 +180,7 @@ h3,
 footer p {
     font-variation-settings:
             'wght' 200;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 120%;
     letter-spacing: 0.03em;
 }
@@ -191,7 +192,7 @@ footer p {
     color: var(--white);
     font-variation-settings:
         'wght' 800;
-    font-size: 24px;
+    font-size: 2.4rem;
     line-height: 84%;
     letter-spacing: 0.05em;
     border: 1px solid var(--white);
