@@ -19,16 +19,24 @@
     --white: #ffffff;
     --black: #121212;
     --light-black: #1D2023;
+
     --roboto: 'Roboto Flex',sans-serif;
     --space: 'Space Grotesk',sans-serif;
 
-    --fs-h1: clamp(9.5rem, 16.79vw + 1rem, 26.8rem);
-    --fs-h2: clamp(3rem, 17.69vw + 1rem, 24rem);
-    --fs-h3: clamp(3rem, 6vw + 1rem, 8.8rem);
+    --fs-h1: clamp(9.5rem, 18vw + 1rem, 26.8rem);
+    --fs-h2: clamp(6rem, 17.69vw + 1rem, 24rem);
+    --fs-h3: clamp(6rem, 6vw + 1rem, 8.8rem);
     --fs1: 1.6rem;
     --fs2: 1.8rem;
     --fs3: 2rem;
+    --fs-p: clamp(12px, 0.7vw + 1rem, 2rem);
     --fs-btn: 2.4rem;
+}
+@media (min-width: 1440px) {
+    :root {
+        --fs-h1: 26.8rem;
+        --fs-p: 2rem;
+    }
 }
 a {
     text-decoration: none;
@@ -137,7 +145,13 @@ h3 {
 /* ---------------- */
 /* Fonts Paragraph*/
 /* ---------------- */
-.intro-line2 p, .about-content, .questions p {
+.intro-line2 p {
+    font-variation-settings: 'wght' 200;
+    font-size: var(--fs-p);
+    line-height: 138%;
+    letter-spacing: 0.03em;
+} 
+.about-content, .questions p {
     font-variation-settings: 'wght' 200;
     font-size: var(--fs3);
     line-height: 138%;
@@ -268,27 +282,38 @@ footer p {
     margin-top: 150px;
     padding: 95px 0 190px 0;
     position: relative;
+    background-color: var(--light-black);
 }
 .intro-line1, .intro-line2 {
     width: 100%;
-    /* border: 1px solid var(--white); */
 }
-.intro-line2 {
+/* .intro-line2 {
     display: flex;
     justify-content: left;
     align-items: center;
-}
-.intro-line2 h1, .intro-line2 p {
-    border: 1px solid var(--white);
+    position: relative;
 }
 .intro-line2 h1 {
-    width: 72.3%;
+    min-width: 100%;
 }
 .intro-line2 p {
-    width: 27.7%;
     max-width: 310px;
-    text-align: left;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-16%, -50%);
+} */
+.intro-line2 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
 }
+.intro-line2 p {
+    margin-left: -10.7%;
+}
+
+
+
 .scroll {
     width: fit-content;
     height: 110px;
