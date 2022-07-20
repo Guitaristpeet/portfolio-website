@@ -21,6 +21,14 @@
     --light-black: #1D2023;
     --roboto: 'Roboto Flex',sans-serif;
     --space: 'Space Grotesk',sans-serif;
+
+    --fs-h1: clamp(9.5rem, 16.79vw + 1rem, 26.8rem);
+    --fs-h2: clamp(3rem, 17.69vw + 1rem, 24rem);
+    --fs-h3: clamp(3rem, 6vw + 1rem, 8.8rem);
+    --fs1: 1.6rem;
+    --fs2: 1.8rem;
+    --fs3: 2rem;
+    --fs-btn: 2.4rem;
 }
 a {
     text-decoration: none;
@@ -43,7 +51,7 @@ body {
 .logo, a, .copy-email {
     text-transform: uppercase;
 }
-h1, h2, h3, h4, .words-animation, .btn {
+h1, h2, h3, h4, .btn {
     font-family: var(--roboto);
     text-transform: uppercase;
     font-style: normal;
@@ -53,7 +61,7 @@ h1, h2, h3, h4, .words-animation, .btn {
 /* ---------------- */
 .logo {
     font-weight: 700;
-    font-size: 1.6rem;
+    font-size: var(--fs1);
     line-height: 97.5%;
     letter-spacing: 0.28em;
 }
@@ -62,7 +70,7 @@ h1, h2, h3, h4, .words-animation, .btn {
 /* ---------------- */
 a {
     font-variation-settings: 'wght' 200;
-    font-size: 1.6rem;
+    font-size: var(--fs1);
     line-height: 97.5%;
     letter-spacing: 0.2em;
 }
@@ -82,7 +90,8 @@ h1 {
         'YTAS' 750,
         'YTDE' -203,
         'YTFI' 738;
-    font-size: 26.8rem;
+    /* font-size: 26.8rem; */
+    font-size: var(--fs-h1);
     line-height: 86%;
     letter-spacing: 0.02em;
     font-stretch: 40;
@@ -100,13 +109,13 @@ h2 {
         'YTDE' -203,
         'YTFI' 738;
     font-weight: 420;
-    font-size: 24rem;
+    /* font-size: 24rem; */
+    font-size: var(--fs-h2);
     line-height: 97%;
     letter-spacing: 0.035em;
     font-stretch: 32;
 }
-h3,
-.words-animation {
+h3 {
     font-variation-settings:
         'wdth' 100,
         'wght' 1000,
@@ -119,7 +128,8 @@ h3,
         'ytde' -203,
         'ytfi' 738,
         'opsz' 78;
-    font-size: 8.8rem;
+    /* font-size: 8.8rem; */
+    font-size: var(--fs-h3);
     line-height: 79px;
     letter-spacing: 0.035em;
     text-align: center;
@@ -129,7 +139,7 @@ h3,
 /* ---------------- */
 .intro-line2 p, .about-content, .questions p {
     font-variation-settings: 'wght' 200;
-    font-size: 2rem;
+    font-size: var(--fs3);
     line-height: 138%;
     letter-spacing: 0.03em;
 }
@@ -139,7 +149,7 @@ h3,
 .scroll p {
     font-family: 'Space Grotesk';
     font-variation-settings: 'wght' 200;
-    font-size: 1.6rem;
+    font-size: var(--fs1);
     line-height: 138%;
     letter-spacing: 0.03em;
     transform: rotate(-90deg);
@@ -149,12 +159,12 @@ h3,
 }
 .about-icon p, .projects-heading p, .project-content p, .contact-heading p {
     font-variation-settings: 'wght' 340;
-    font-size: 1.8rem;
+    font-size: var(--fs2);
     line-height: 110%;
     letter-spacing: 0.16em;
 }
 .project-content p {
-    font-size: 20px;
+    font-size: 2rem;
     letter-spacing: 0.03em;
 }
 .project-info p {
@@ -169,7 +179,7 @@ h3,
 }
 .copy-email {
     font-weight: 700;
-    font-size: 1.8rem;
+    font-size: var(--fs2);
     line-height: 110%;
     text-align: center;
     letter-spacing: 0.16em;
@@ -180,7 +190,7 @@ h3,
 footer p {
     font-variation-settings:
             'wght' 200;
-    font-size: 1.6rem;
+    font-size: var(--fs1);
     line-height: 120%;
     letter-spacing: 0.03em;
 }
@@ -192,7 +202,7 @@ footer p {
     color: var(--white);
     font-variation-settings:
         'wght' 800;
-    font-size: 2.4rem;
+    font-size: var(--fs-btn);
     line-height: 84%;
     letter-spacing: 0.05em;
     border: 1px solid var(--white);
@@ -248,17 +258,34 @@ footer p {
 /* ---------------- */
 /* Intro */
 /* ---------------- */
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 70px;
+}
 .intro {
     margin-top: 150px;
-    padding: 95px 70px 190px 70px;
+    padding: 95px 0 190px 0;
     position: relative;
+}
+.intro-line1, .intro-line2 {
+    width: 100%;
+    /* border: 1px solid var(--white); */
 }
 .intro-line2 {
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
 }
+.intro-line2 h1, .intro-line2 p {
+    border: 1px solid var(--white);
+}
+.intro-line2 h1 {
+    width: 72.3%;
+}
 .intro-line2 p {
+    width: 27.7%;
     max-width: 310px;
     text-align: left;
 }
