@@ -3,9 +3,11 @@
 /* ---------------- */
 @font-face {
     font-family: 'Roboto Flex';
-    src: url(/ASSETS/FONTS/Roboto_Flex/RobotoFlex-VariableFont_GRAD\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf) format('woff2');
+    src: url(/ASSETS/FONTS/Roboto_Flex/RobotoFlex[GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght].ttf) format('ttf');
+}
+@font-face {
     font-family: 'Space Grotesk';
-    src: url(/ASSETS/FONTS/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf) format(woff2);
+    src: url(/ASSETS/FONTS/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf) format('woff2');
 }
 * {
     margin: 0;
@@ -16,7 +18,7 @@
     --white: #ffffff;
     --black: #121212;
     --light-black: #1D2023;
-    --roboto: 'Roboto_Flex',sans-serif;
+    --roboto: 'Roboto Flex',sans-serif;
     --space: 'Space Grotesk',sans-serif;
 }
 a {
@@ -35,21 +37,167 @@ body {
 /* ---------------- */
 .logo, a, p, .copy-email {
     font-family: var(--space);
+    font-style: normal;
 }
 .logo, a, .copy-email {
     text-transform: uppercase;
 }
-h1, h2, h3, h4, .btn {
+h1, h2, h3, h4, .words-animation, .btn {
     font-family: var(--roboto);
     text-transform: uppercase;
+    font-style: normal;
 }
 /* ---------------- */
 /* Fonts Logo*/
 /* ---------------- */
 .logo {
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 97.5%;
     letter-spacing: 0.28em;
+}
+/* ---------------- */
+/* Fonts Navbar*/
+/* ---------------- */
+a {
+    font-variation-settings: 'wght' 200;
+    font-size: 16px;
+    line-height: 97.5%;
+    letter-spacing: 0.2em;
+}
+/* ---------------- */
+/* Fonts Heading*/
+/* ---------------- */
+h1 {
+    font-variation-settings: 'wdth' 40, 
+        'wght' 400, 
+        'GRAD' 0,
+        'slnt' 0,
+        'XTRA' 468,
+        'XOPQ' 96,
+        'YOPQ' 79,
+        'YTLC' 514,
+        'YTUC' 712,
+        'YTAS' 750,
+        'YTDE' -203,
+        'YTFI' 738;
+    font-size: 268px;
+    line-height: 86%;
+    letter-spacing: 0.02em;
+    font-stretch: 40;
+}
+h2 {
+    font-variation-settings:
+        'wdth' 32,
+        'GRAD' -40,
+        'XTRA' 468,
+        'XOPQ' 96,
+        'YOPQ' 79,
+        'YTLC' 514,
+        'YTUC' 712,
+        'YTAS' 750,
+        'YTDE' -203,
+        'YTFI' 738;
+    font-weight: 420;
+    font-size: 240px;
+    line-height: 97%;
+    letter-spacing: 0.035em;
+    font-stretch: 32;
+}
+h3,
+.words-animation {
+    font-variation-settings:
+        'wdth' 100,
+        'wght' 1000,
+        'xtra' 468,
+        'xopq' 96,
+        'yopq' 79,
+        'ytlc' 514,
+        'ytuc' 712,
+        'ytas' 750,
+        'ytde' -203,
+        'ytfi' 738,
+        'opsz' 78;
+    font-size: 88px;
+    line-height: 79px;
+    letter-spacing: 0.035em;
+    text-align: center;
+}
+/* ---------------- */
+/* Fonts Paragraph*/
+/* ---------------- */
+.intro-line2 p, .about-content, .questions p {
+    font-variation-settings: 'wght' 200;
+    font-size: 20px;
+    line-height: 138%;
+    letter-spacing: 0.03em;
+}
+.scroll p {
+    font-family: 'Space Grotesk';
+    font-variation-settings: 'wght' 200;
+    font-size: 16px;
+    line-height: 138%;
+    letter-spacing: 0.03em;
+    transform: rotate(-90deg);
+}
+.about-icon p, .contact-heading p {
+    text-align: center;
+}
+.about-icon p, .projects-heading p, .project-content p, .contact-heading p {
+    font-variation-settings: 'wght' 340;
+    font-size: 18px;
+    line-height: 110%;
+    letter-spacing: 0.16em;
+}
+.project-content p {
+    font-size: 20px;
+    letter-spacing: 0.03em;
+}
+.project-info p {
+    font-variation-settings: 'wght' 340;
+    font-size: 20px;
+    line-height: 148%;
+    text-align: right;
+    letter-spacing: 0.03em;
+}
+.questions p {
+    text-align: center;
+}
+.copy-email {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 110%;
+    text-align: center;
+    letter-spacing: 0.16em;
+}
+/* ---------------- */
+/* Fonts Footer*/
+/* ---------------- */
+footer p {
+    font-variation-settings:
+            'wght' 200;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+}
+/* ---------------- */
+/* Button */
+/* ---------------- */
+.btn {
+    background-color: transparent;
+    color: var(--white);
+    font-variation-settings:
+        'wght' 800;
+    font-size: 24px;
+    line-height: 84%;
+    letter-spacing: 0.05em;
+    border: 1px solid var(--white);
+    padding: 27px 36px;
+    border-radius: 40px;
+}
+
+
+
+.scroll, .about-icon, .contact-heading {
+    width: fit-content;
 }
