@@ -414,13 +414,28 @@ footer p {
     margin: 0 70px;
     left: 0;
 }
-
+/* ---------------- */
+/* Contact */
+/* ---------------- */
+.contact {
+    background-color: var(--light-black);
+    padding: 115px 0 200px 0;
+}
+.contact-heading {
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-heading img {
+    margin-bottom: 10px;
+}
+.contact-heading p {
+    margin-bottom: 40px;
+}
 
 
 .footer-line {
     display: none;
 }
-
-/* .scroll, .about-icon, .contact-heading {
-    width: fit-content;
-} */
