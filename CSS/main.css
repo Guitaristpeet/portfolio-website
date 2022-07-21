@@ -209,21 +209,6 @@ footer p {
     letter-spacing: 0.03em;
 }
 /* ---------------- */
-/* Button */
-/* ---------------- */
-.btn {
-    background-color: transparent;
-    color: var(--white);
-    font-variation-settings:
-        'wght' 800;
-    font-size: var(--fs-btn);
-    line-height: 84%;
-    letter-spacing: 0.05em;
-    border: 1px solid var(--white);
-    padding: 27px 36px;
-    border-radius: 40px;
-}
-/* ---------------- */
 /* Header */
 /* ---------------- */
 .header {
@@ -420,6 +405,7 @@ footer p {
 .contact {
     background-color: var(--light-black);
     padding: 115px 0 200px 0;
+    text-align: center;
 }
 .contact-heading {
     width: fit-content;
@@ -434,7 +420,31 @@ footer p {
 .contact-heading p {
     margin-bottom: 40px;
 }
-
+.interested, .questions {
+    margin-bottom: 40px;
+}
+/* .questions {
+    margin-bottom: 65px;
+} */
+.copy-email {
+    display: block;
+}
+/* ---------------- */
+/* Button */
+/* ---------------- */
+.btn {
+    background-color: transparent;
+    color: var(--white);
+    font-variation-settings:
+        'wght' 800;
+    font-size: var(--fs-btn);
+    line-height: 84%;
+    letter-spacing: 0.05em;
+    border: 1px solid var(--white);
+    padding: 1.37em 1.4em;
+    border-radius: 50px;
+    margin: 0 auto 55px auto;
+}
 
 .footer-line {
     display: none;
