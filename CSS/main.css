@@ -19,6 +19,7 @@
     --white: #ffffff;
     --black: #121212;
     --light-black: #1D2023;
+    --gray: rgb(87, 87, 87);
 
     --roboto: 'Roboto Flex',sans-serif;
     --space: 'Space Grotesk',sans-serif;
@@ -250,9 +251,12 @@ footer p {
     width: calc(100vw - 140px);
     height: 1px;
     margin: 0 70px;
-    background-color: var(--white);
+    background-color: var(--gray);
     position: absolute;
     bottom: 0;
+}
+.header-line {
+    background-color: var(--white);
 }
 /* ---------------- */
 /* Intro */
@@ -476,4 +480,44 @@ footer p {
 .underline:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+/* ---------------- */
+/* Hover Project-name */
+/* ---------------- */
+@keyframes h2anim-in {
+    from {
+        /* font-weight: 420; */
+        font-variation-settings:
+            'wght' 420,
+            'wdth' 32,
+            'GRAD' -40;
+        }
+        to {
+            /* font-weight: 500; */
+            font-variation-settings:
+            'wght' 500,
+            'wdth' 35,
+            'GRAD' 0;
+        }
+    }
+    @keyframes h2anim-out {
+        from {
+            font-variation-settings:
+            'wght' 500,
+            'wdth' 35,
+            'GRAD' 0;
+        }
+        to {
+            font-variation-settings:
+            'wght' 420,
+            'wdth' 32,
+            'GRAD' -40;
+    }
+}
+.project-name {
+    animation: h2anim-out 250ms both ease-in;
+    transition: all 200ms ease-in;
+}
+.project-name:hover {
+    animation: h2anim-in 200ms both ease-in;
 }
