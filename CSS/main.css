@@ -401,11 +401,17 @@ footer p {
     width: 100%;
     margin: 0;
     padding: 0 70px;
+    position: relative;
 }
 .project-line {
     width: 100%;
     margin: 0;
     top: 0;
+    left: 0;
+}
+.project-line-last {
+    width: calc(100vw - 140px);
+    margin: 0 70px;
     left: 0;
 }
 

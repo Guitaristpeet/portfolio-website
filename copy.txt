@@ -1,0 +1,16 @@
+logo										1.6rem	/	/
+a										1.6rem	/	/
+h1										26.8rem	/
+h2										24rem	/
+h3										8.8rem	/	
+.intro-line2 p, .about-content, .questions p					2rem	/	/
+.scroll p									1.6rem	/	/
+.about-icon p, .projects-heading p, .project-content p, .contact-heading p	1.8rem	/	/
+.project-content p, .project-info p						2rem	/	/
+.copy-email 									1.8rem	/	/
+footer p									1.6rem	/	/
+btn										2.4rem	/	/
+
+
+
+responsive paragraph 2rem
