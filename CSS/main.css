@@ -383,6 +383,7 @@ footer p {
     margin: 0;
     top: 0;
     left: 0;
+    transform-origin: left;
 }
 .project-line-last {
     width: calc(100vw - 140px);
