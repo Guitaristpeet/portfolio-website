@@ -316,7 +316,9 @@ footer p {
 }
 .about-icon img, .about-icon p {
     grid-area: 1/1;
-
+}
+.about-icon p {
+    z-index: 2;
 }
 .about-content {
     text-align: center;
@@ -516,8 +518,8 @@ footer p {
 }
 .project-name {
     animation: h2anim-out 250ms both ease-in;
-    transition: all 200ms ease-in;
+    transition: all 150ms ease-in;
 }
 .project-name:hover {
-    animation: h2anim-in 200ms both ease-in;
+    animation: h2anim-in 150ms both ease-in;
 }
