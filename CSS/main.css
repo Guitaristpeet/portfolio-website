@@ -43,6 +43,7 @@
 a {
     text-decoration: none;
     color: var(--white);
+    cursor: pointer;
 }
 ul, li {
     list-style: none;
@@ -74,6 +75,7 @@ h1, h2, h3, h4, .btn {
     font-size: var(--fs1);
     line-height: 97.5%;
     letter-spacing: 0.28em;
+    cursor: pointer;
 }
 /* ---------------- */
 /* Fonts Navbar*/

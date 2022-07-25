@@ -210,3 +210,15 @@ btn.addEventListener('mouseout', () => {
         swiper2.slidePrev();
     }, 500);
 });
+// --------------------------------
+// Scroll To
+// --------------------------------
+const aboutSection = document.getElementById('about');
+const projectsSection = document.getElementById('projects');
+const contactSection = document.getElementById('contact');
+const linkAbout = document.querySelector('.link-to-about')
+const linkProjects = document.querySelector('.link-to-projects')
+const linkContact = document.querySelector('.link-to-contact')
+linkAbout.addEventListener('click', () => aboutSection.scrollIntoView({behavior: 'smooth'}));
+linkProjects.addEventListener('click', () => projectsSection.scrollIntoView({behavior: 'smooth'}));
+linkContact.addEventListener('click', () => contactSection.scrollIntoView({behavior: 'smooth'}));
