@@ -1,16 +1,16 @@
 // --------------------------------
 // Words Animation Data and Functionality
 // --------------------------------
-const swiperWrapper = document.querySelector('.swiper-wrapper');
+const swiperWrapper1 = document.querySelector('.swiper-wrapper1');
 const words = ['web development', 'innovation', 'design', 'technology', 'animation', 'game design', 'audio innovation', '3d', 'ambisonic mix'];
 
 let allWords = words.map((word) => {
     return `<h3 class="words-animation contactInView swiper-slide">${word}</h3>`;
 }).join('');
-swiperWrapper.innerHTML = allWords;
+swiperWrapper1.innerHTML = allWords;
 
 setTimeout(() => {
-    const swiper = new Swiper('.swiper', {
+    const swiper1 = new Swiper('.swiper1', {
         loop: true,
         autoplay: {
             delay: 1500
@@ -167,6 +167,7 @@ gsap.to('.arrow-down', {
 // Button Functionalities
 // --------------------------------
 const btn = document.querySelector('.btn');
+const myEmail = document.querySelector('.email');
 var copyText = document.querySelector('.copy-email');
 copyText.innerHTML = copyText.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
@@ -178,19 +179,25 @@ btn.addEventListener('mouseover', () => {
         easing: 'easeOutElastic(1, .6)',
         delay: anime.stagger(20),
     });
+});
+const swiper2 = new Swiper('.swiper2', {
+    duration: 1500,
+    clickable: false,
+    allowTouchMove: false
+});
     btn.addEventListener('click', () => {
         copyToClipboard();
-        // copyText.innerText = 'Copied!';
+        
+        swiper2.slideNext();
     });
     function copyToClipboard(){
         let inputEl = document.createElement('input');
-        inputEl.value = btn.innerText;
+        inputEl.value = myEmail.innerText;
         document.body.appendChild(inputEl);
         inputEl.select();
         document.execCommand('copy');
         inputEl.parentNode.removeChild(inputEl);
     };
-});
 btn.addEventListener('mouseout', () => {
     anime({
         targets: '.copy-email span',
@@ -199,4 +206,7 @@ btn.addEventListener('mouseout', () => {
         easing: 'easeInElastic(1, .6)',
         delay: anime.stagger(20, {from: 'last'}),
     });
+    setTimeout(() => {
+        swiper2.slidePrev();
+    }, 500);
 });
