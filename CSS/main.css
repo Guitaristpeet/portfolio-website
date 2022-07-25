@@ -524,7 +524,6 @@ footer p {
 .project-name:hover {
     animation: h2anim-in 150ms both ease-in;
 }
-
 /* .scroll-down span {
     position: relative;
     display: inline-block;

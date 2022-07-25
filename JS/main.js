@@ -2,23 +2,24 @@
 // Words Animation Data and Functionality
 // --------------------------------
 const swiperWrapper = document.querySelector('.swiper-wrapper');
-const words = ['web development', 'innovation', 'technology', 'design', '3d', 'animation', 'game design', 'audio innovation', 'spatial audio', 'ambisonic mix'];
+const words = ['web development', 'innovation', 'design', 'technology', 'animation', 'game design', 'audio innovation', '3d', 'ambisonic mix'];
 
 let allWords = words.map((word) => {
     return `<h3 class="words-animation contactInView swiper-slide">${word}</h3>`;
 }).join('');
 swiperWrapper.innerHTML = allWords;
 
-const swiper = new Swiper('.swiper', {
-    loop: true,
-    autoplay: {
-        delay: 1500
-    },
-    direction  : 'vertical',
-    clickable: false,
-    allowTouchMove: false
-});
-
+setTimeout(() => {
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        autoplay: {
+            delay: 1500
+        },
+        direction  : 'vertical',
+        clickable: false,
+        allowTouchMove: false
+    });
+}, '3000');
 // --------------------------------
 // Projects Data and Functionality
 // --------------------------------
@@ -42,7 +43,9 @@ let allProject = projects.map((project, index) => {
 const lineDiv = document.createElement('div');
 lineDiv.classList.add('line', 'project-line-last');
 projectsContainer.appendChild(lineDiv);
-
+// --------------------------------
+// GSAP
+// --------------------------------
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to('.line1-slide', {
@@ -81,7 +84,7 @@ gsap.from('.aboutInView', {
     opacity: 0,
 });
 // --------------------------------
-// Prohects Section In-View Animation
+// Projects Section In-View Animation
 // --------------------------------
 gsap.from('.projInView', {
     scrollTrigger: {
