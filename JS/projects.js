@@ -1,4 +1,4 @@
-export const projects = [
+const projects = [
     {
         id: 4,
         name: 'valla table',
