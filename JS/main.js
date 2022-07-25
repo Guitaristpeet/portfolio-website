@@ -188,5 +188,15 @@ btn.addEventListener('mouseout', () => {
         delay: anime.stagger(20, {from: 'last'}),
     });
 });
-
-
+btn.addEventListener('click', () => {
+    copyToClipboard();
+});
+  
+function copyToClipboard(){
+    let inputEl = document.createElement('input');
+    inputEl.value = btn.innerText;
+    document.body.appendChild(inputEl);
+    inputEl.select();
+    document.execCommand('copy');
+    inputEl.parentNode.removeChild(inputEl);
+};
