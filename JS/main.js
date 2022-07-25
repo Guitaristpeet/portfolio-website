@@ -123,52 +123,16 @@ gsap.to('.arrow-down', {
 //         delay: anime.stagger(100, {from: 'last'}),
 //     });
 
+// --------------------------------
+// Words Animation Data and Functionality
+// --------------------------------
+const swiperWrapper = document.querySelector('.swiper-wrapper');
 const words = ['web development', 'innovation', 'technology', 'design', 'immersive experience', '3d', 'animation', 'game design', 'audio innovation', 'spatial audio', 'ambisonic mix'];
-const wordsAnim = document.querySelector('.words-animation');
 
-// words.forEach((word) => {
-//     let result = `<span class='letter'>${word}</span>`;
-//     wordsAnim.innerHTML = result;
-
-//     anime.timeline({
-//         target: wordsAnim,
-//         translateY: [0, -100],
-//         easing: 'linear',
-//         duration: 500,
-//         delay: 1000
-//     })
-
-// });
-// let allWords = words.map((word) => {
-//     return `<h3 class="words-animation contactInView">${word}</h3>`;
-// }).join('');
-// wordsAnim.innerHTML = allWords;
-
-
-
-
-
-// var text = document.querySelector('.words-animation');
-// text.innerHTML = text.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-// anime.timeline({loop: true})
-//     .add({
-//         targets: '.scroll-down span',
-//         translateX: [0, -20],
-//         easing: 'linear',
-//         duration: 500,
-//         delay: anime.stagger(100),
-//     })
-//     .add({
-//         delay: 500,
-//     })
-//     .add({
-//         targets: '.scroll-down span',
-//         translateX: [-20, 0],
-//         easing: 'linear',
-//         duration: 500,
-//         delay: anime.stagger(100, {from: 'last'}),
-//     });
+let allWords = words.map((word) => {
+    return `<h3 class="words-animation contactInView swiper-slide">${word}</h3>`;
+}).join('');
+swiperWrapper.innerHTML = allWords;
 
 const swiper = new Swiper('.swiper', {
     loop: true,
