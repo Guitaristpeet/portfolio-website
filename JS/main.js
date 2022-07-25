@@ -163,27 +163,30 @@ gsap.to('.arrow-down', {
     repeat: -1,
     yoyo: true,
 })
+// --------------------------------
+// Button Functionalities
+// --------------------------------
+const btn = document.querySelector('.btn');
+var copyText = document.querySelector('.copy-email');
+copyText.innerHTML = copyText.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-// var text = document.querySelector('.scroll-down');
-// text.innerHTML = text.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-// anime.timeline({loop: true})
-//     .add({
-//         targets: '.scroll-down span',
-//         translateX: [0, -20],
-//         easing: 'linear',
-//         duration: 500,
-//         delay: anime.stagger(100),
-//     })
-//     .add({
-//         delay: 500,
-//     })
-//     .add({
-//         targets: '.scroll-down span',
-//         translateX: [-20, 0],
-//         easing: 'linear',
-//         duration: 500,
-//         delay: anime.stagger(100, {from: 'last'}),
-//     });
+btn.addEventListener('mouseover', () => {
+    anime({
+        targets: '.copy-email span',
+        translateY: [20, 0],
+        duration: 400,
+        easing: 'easeOutElastic(1, .6)',
+        delay: anime.stagger(20),
+    });
+});
+btn.addEventListener('mouseout', () => {
+    anime({
+        targets: '.copy-email span',
+        translateY: [0, 20],
+        duration: 400,
+        easing: 'easeInElastic(1, .6)',
+        delay: anime.stagger(20, {from: 'last'}),
+    });
+});
 
 

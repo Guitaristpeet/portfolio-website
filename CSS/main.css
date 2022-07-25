@@ -416,6 +416,7 @@ footer p {
 }
 .copy-email {
     display: block;
+    overflow: hidden;
 }
 /* ---------------- */
 /* Button */
@@ -432,6 +433,7 @@ footer p {
     padding: 1.37em 1.4em;
     border-radius: 50px;
     margin: 0 auto 55px auto;
+    cursor: pointer;
 }
 /* ---------------- */
 /* Footer */
@@ -524,11 +526,14 @@ footer p {
 .project-name:hover {
     animation: h2anim-in 150ms both ease-in;
 }
-/* .scroll-down span {
+.copy-email span {
+    font-size: 1.6rem;
     position: relative;
     display: inline-block;
-} */
-
+}
+.letter {
+    transform: translateY(20px);
+}
 .swiper1 {
     height: 7.5rem;
 }
