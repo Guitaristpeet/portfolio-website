@@ -63,7 +63,9 @@ gsap.to('.line2-slide', {
     },
     x: -300
 });
-
+// --------------------------------
+// About Section In-View Animation
+// --------------------------------
 gsap.from('.aboutInView', {
     scrollTrigger: {
         trigger: '.aboutInView',
@@ -78,15 +80,9 @@ gsap.from('.aboutInView', {
     y: 50,
     opacity: 0,
 });
-
-gsap.to('.about-star', {
-    scrollTrigger: {
-        trigger: '.about-star',
-        scrub: true,
-    },
-    rotate: 90,
-});
-
+// --------------------------------
+// Prohects Section In-View Animation
+// --------------------------------
 gsap.from('.projInView', {
     scrollTrigger: {
         trigger: '.projInView',
@@ -101,7 +97,6 @@ gsap.from('.projInView', {
     y: 50,
     opacity: 0,
 });
-
 gsap.from('.project-line', {
     scrollTrigger: {
         trigger: '.projInView',
@@ -116,7 +111,33 @@ gsap.from('.project-line', {
     scaleX: 0,
     ease: "power2.inOut"
 });
-
+// --------------------------------
+// Contact Section In-View Animation
+// --------------------------------
+gsap.from('.contactInView', {
+    scrollTrigger: {
+        trigger: '.contactInView',
+        start: 'top 80%',
+        end: 'bottom 0%',
+        // markers: true,
+        toggleActions: 'play none none reverse',
+    },
+    stagger: {
+        amount: 0.8
+    },
+    y: 35,
+    opacity: 0,
+});
+// --------------------------------
+// Star Animation
+// --------------------------------
+gsap.to('.about-star', {
+    scrollTrigger: {
+        trigger: '.about-star',
+        scrub: true,
+    },
+    rotate: 90,
+});
 gsap.to('.proj-star', {
     scrollTrigger: {
         trigger: '.proj-star',
@@ -124,22 +145,16 @@ gsap.to('.proj-star', {
     },
     rotate: 90,
 });
-
-// gsap.from('.contactInView', {
-//     scrollTrigger: {
-//         trigger: '.contactInView',
-//         start: 'top 80%',
-//         end: 'bottom 0%',
-//         // markers: true,
-//         toggleActions: 'play none none reverse',
-//     },
-//     stagger: {
-//         amount: 0.8
-//     },
-//     y: 35,
-//     opacity: 0,
-// });
-
+gsap.to('.contact-star', {
+    scrollTrigger: {
+        trigger: '.contact-star',
+        scrub: true,
+    },
+    rotate: 90,
+});
+// --------------------------------
+// Arrow-down Animation
+// --------------------------------
 gsap.to('.arrow-down', {
     y: 5,
     repeat: -1,
