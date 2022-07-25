@@ -178,6 +178,18 @@ btn.addEventListener('mouseover', () => {
         easing: 'easeOutElastic(1, .6)',
         delay: anime.stagger(20),
     });
+    btn.addEventListener('click', () => {
+        copyToClipboard();
+        // copyText.innerText = 'Copied!';
+    });
+    function copyToClipboard(){
+        let inputEl = document.createElement('input');
+        inputEl.value = btn.innerText;
+        document.body.appendChild(inputEl);
+        inputEl.select();
+        document.execCommand('copy');
+        inputEl.parentNode.removeChild(inputEl);
+    };
 });
 btn.addEventListener('mouseout', () => {
     anime({
@@ -188,15 +200,3 @@ btn.addEventListener('mouseout', () => {
         delay: anime.stagger(20, {from: 'last'}),
     });
 });
-btn.addEventListener('click', () => {
-    copyToClipboard();
-});
-  
-function copyToClipboard(){
-    let inputEl = document.createElement('input');
-    inputEl.value = btn.innerText;
-    document.body.appendChild(inputEl);
-    inputEl.select();
-    document.execCommand('copy');
-    inputEl.parentNode.removeChild(inputEl);
-};

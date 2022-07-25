@@ -20,6 +20,7 @@
     --black: #121212;
     --light-black: #1D2023;
     --gray: rgb(87, 87, 87);
+    --blue: #0038ff;
 
     --roboto: 'Roboto Flex',sans-serif;
     --space: 'Space Grotesk',sans-serif;
@@ -434,6 +435,8 @@ footer p {
     border-radius: 50px;
     margin: 0 auto 55px auto;
     cursor: pointer;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
 }
 /* ---------------- */
 /* Footer */
@@ -526,6 +529,15 @@ footer p {
 .project-name:hover {
     animation: h2anim-in 150ms both ease-in;
 }
+/* ---------------- */
+/* Words-animation slide */
+/* ---------------- */
+.swiper1 {
+    height: 7.5rem;
+}
+/* ---------------- */
+/* Click-tocopy animation */
+/* ---------------- */
 .copy-email span {
     font-size: 1.6rem;
     position: relative;
@@ -534,6 +546,26 @@ footer p {
 .letter {
     transform: translateY(20px);
 }
-.swiper1 {
-    height: 7.5rem;
+/* ---------------- */
+/* Button hover effect */
+/* ---------------- */
+.btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--blue);
+    border-radius: 50px;
+    width: 0;
+    z-index: -1;
+    opacity: 0.5;
+    transition: all 0.2s ease;
+}
+.btn:hover::before {
+    width: 100%;
+    opacity: 1;
+} 
+.btn:hover {
+    border-color: var(--blue);
 }
