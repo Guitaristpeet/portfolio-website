@@ -6,6 +6,7 @@ const projects = [
         info: '',
         technologies: 'html / css / javascript',
         img: '',
+        url: 'https://valla-table-su-t.netlify.app/',
     },
     {
         id: 3,
@@ -14,6 +15,7 @@ const projects = [
         info: '',
         technologies: 'html / css / javascript',
         img: '',
+        url: 'https://poveda-su-t.netlify.app/',
     },
     {
         id: 2,
@@ -22,6 +24,7 @@ const projects = [
         info: '',
         technologies: 'html / css / javascript',
         img: '',
+        url: 'https://stornoway-su-t.netlify.app/',
     },
     {
         id: 1,
@@ -30,5 +33,6 @@ const projects = [
         info: '',
         technologies: 'html / css / javascript',
         img: '',
+        url: 'https://real-true-su-t.netlify.app/',
     }
 ]

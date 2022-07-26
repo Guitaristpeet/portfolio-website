@@ -62,7 +62,7 @@ let allProject = projects.map((project, index) => {
         <div class="line project-line"></div>
             <div class="project-content projInView">
                 <p class="project-num">0${num}</p>
-                <h2 class="project-name">${project.name}</h2>
+                <h2 class="project-name" onclick={window.open('${project.url}')}>${project.name}</h2>
                 <div class="project-info">
                     <p class="project-desc">${project.desc}</p>
                     <p class="technology">${project.technologies}</p>
