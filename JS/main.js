@@ -37,7 +37,7 @@ ScrollTrigger.create({
     trigger: '.interested',
     start: 'top 80%',
     end: 'bottom 80%',
-    markers: true,
+    // markers: true,
     onEnter: () => {
         setTimeout(() => {
             swiper1.autoplay.start();
@@ -271,3 +271,20 @@ btn.addEventListener('mouseout', () => {
     }, 500);
 });
 
+/* ---------------- */
+/* Try
+/* ---------------- */
+// document.body.addEventListener('mousemove', (event) => {
+//     const mouseX = event.clientX;
+//     const mouseY = event.clientY;
+
+//     gsap.set('.cursor', {
+//         x: mouseX,
+//         y: mouseY,
+//     });
+//     gsap.to('.shape', {
+//         x: mouseX,
+//         y: mouseY,
+//         stagger: -0.05
+//     });
+// });

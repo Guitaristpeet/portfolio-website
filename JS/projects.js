@@ -2,7 +2,7 @@ const projects = [
     {
         id: 4,
         name: 'valla table',
-        desc: "Hell's Kitchen Must-Try Thai Restaurant",
+        desc: "Hell's Kitchen Thai Restaurant",
         info: '',
         technologies: 'html / css / javascript',
         img: '',

@@ -108,6 +108,8 @@ h1 {
     line-height: 86%;
     letter-spacing: 0.02em;
     font-stretch: 40;
+    background: transparent;
+    color: var(--whtie);
 }
 h2 {
     font-variation-settings:
@@ -282,6 +284,7 @@ footer p, .myName {
     display: grid;
     grid-template-columns: 3fr 1fr;
     align-items: center;
+    /* background-color: var(--white); */
 }
 .intro-line2 p {
     margin-left: -10.7%;
@@ -496,29 +499,35 @@ footer p, .myName {
 /* Hover Project-name */
 /* ---------------- */
 @keyframes h2anim-in {
-    from {
+    0% {
         /* font-weight: 420; */
         font-variation-settings:
             'wght' 420,
             'wdth' 32,
             'GRAD' -40;
         }
-        to {
+        70%{
+            font-variation-settings:
+                'wght' 513,
+                'wdth' 35.3,
+                'GRAD' 0;
+        }
+        100% {
             /* font-weight: 500; */
             font-variation-settings:
-            'wght' 500,
-            'wdth' 35,
-            'GRAD' 0;
+                'wght' 500,
+                'wdth' 35,
+                'GRAD' 0;
         }
     }
     @keyframes h2anim-out {
-        from {
+        0% {
             font-variation-settings:
             'wght' 500,
             'wdth' 35,
             'GRAD' 0;
         }
-        to {
+        100% {
             font-variation-settings:
             'wght' 420,
             'wdth' 32,
@@ -527,10 +536,11 @@ footer p, .myName {
 }
 .project-name {
     animation: h2anim-out 250ms both ease-in;
-    transition: all 150ms ease-in;
+    transition: all 200ms ease-in;
+    cursor: pointer;
 }
 .project-name:hover {
-    animation: h2anim-in 150ms both ease-in;
+    animation: h2anim-in 150ms both ease-in-out;
 }
 /* ---------------- */
 /* Words-animation slide */
@@ -538,9 +548,6 @@ footer p, .myName {
 .swiper1 {
     height: 7.5rem;
 }
-/* .words-animation {
-    opacity: 0;
-} */
 /* ---------------- */
 /* Click-tocopy animation */
 /* ---------------- */
@@ -604,3 +611,51 @@ h4 {
 .footer-content a:hover {
     color: var(--lightblue);
 }
+/* ---------------- */
+/* Try
+/* ---------------- */
+/* .shape {
+    will-change: transform;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+}
+.shape-1 {
+    background-color: red;
+    width: 650px;
+    height: 650px;
+    margin: -325px 0 0 -325px;
+    z-index: -10;
+}
+.shape-2 {
+    background-color: green;
+    width: 440px;
+    height: 440px;
+    margin: -220px 0 0 -220px;
+    z-index: -10;
+}
+.shape-3 {
+    background-color: yellow;
+    width: 270px;
+    height: 270px;
+    margin: -135px 0 0 -135px;
+    z-index: -10;
+}
+.cursor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: blue;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: -7.5px 0 0 -7.5px;
+    will-change: transfomr;
+    user-select: none;
+    pointer-events: none;
+    z-index: 4;
+}
+.mix-blend {
+    mix-blend-mode: screen;
+} */
