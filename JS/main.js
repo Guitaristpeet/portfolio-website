@@ -164,6 +164,24 @@ gsap.to('.arrow-down', {
     yoyo: true,
 })
 // --------------------------------
+// Alter BG Color
+// --------------------------------
+const sections = gsap.utils.toArray('.section');
+sections.forEach((section, i) => {
+    var colorAttr = section.getAttribute('data-color');
+
+    gsap.to('.body', {
+        backgroundColor: colorAttr,
+        immediateRender: false,
+        scrollTrigger: {
+            trigger: section,
+            scrub: true,
+            start: 'top bottom',
+            end: '+=100%'
+        }
+    })
+});
+// --------------------------------
 // Button Functionalities
 // --------------------------------
 const btn = document.querySelector('.btn');

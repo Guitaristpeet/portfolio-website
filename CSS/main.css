@@ -55,7 +55,7 @@ body {
 /* ---------------- */
 /* Fonts */
 /* ---------------- */
-.logo, a, p, .copy-email {
+.logo, a, p, .copy-email, .myName {
     font-family: var(--space);
     font-style: normal;
 }
@@ -80,12 +80,13 @@ h1, h2, h3, h4, .btn {
 /* ---------------- */
 /* Fonts Navbar*/
 /* ---------------- */
-a {
+.nav-links a {
     font-variation-settings: 'wght' 200;
     font-size: var(--fs1);
     line-height: 97.5%;
     letter-spacing: 0.2em;
 }
+
 /* ---------------- */
 /* Fonts Heading*/
 /* ---------------- */
@@ -205,7 +206,7 @@ h3 {
 /* ---------------- */
 /* Fonts Footer*/
 /* ---------------- */
-footer p {
+footer p, .myName {
     font-variation-settings:
             'wght' 200;
     font-size: var(--fs1);
@@ -240,7 +241,6 @@ footer p {
     justify-content: space-between;
     padding: 0 70px;
 }
-
 .nav-links {
     display: flex;
 }
@@ -309,7 +309,7 @@ footer p {
 /* ---------------- */
 .about {
     padding: 190px 0 280px 0;
-    background-color: var(--light-black);
+    /* background-color: var(--light-black); */
 }
 .about-icon {
     width: fit-content;
@@ -397,7 +397,7 @@ footer p {
 /* Contact */
 /* ---------------- */
 .contact {
-    background-color: var(--light-black);
+    /* background-color: var(--light-black); */
     padding: 115px 0 200px 0;
     text-align: center;
 }
@@ -464,8 +464,9 @@ footer p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
-.social-links a {
+.social-links svg {
     margin-left: 20px;
 }
 /* ---------------- */
@@ -584,4 +585,19 @@ h4 {
     font-size: 2.4rem;
     display: inline-block;
     width: fit-content;
+}
+/* ---------------- */
+/* Social Links Hover */
+/* ---------------- */
+.social-links path {
+    transition: all 0.3s ease;
+}
+.social-links li:hover path {
+    fill: var(--lightblue);
+}
+.footer-content a {
+    text-transform: capitalize;
+}
+.footer-content a:hover {
+    color: var(--lightblue);
 }
