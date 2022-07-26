@@ -47,7 +47,9 @@ projectsContainer.appendChild(lineDiv);
 // GSAP
 // --------------------------------
 gsap.registerPlugin(ScrollTrigger);
-
+// --------------------------------
+// Intro 
+// --------------------------------
 gsap.to('.line1-slide', {
     scrollTrigger: {
         trigger: '.line1-slide',
@@ -65,6 +67,16 @@ gsap.to('.line2-slide', {
         scrub: 0.5
     },
     x: -300
+});
+gsap.to('.intro-p', {
+    scrollTrigger: {
+        trigger: '.intro-p',
+        scrub: 0.7,
+        markers: true,
+        start: 'top center'
+    },
+    y: 300,
+    opacity: 0,
 });
 // --------------------------------
 // About Section In-View Animation
