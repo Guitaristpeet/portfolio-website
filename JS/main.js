@@ -1,5 +1,18 @@
+gsap.registerPlugin(ScrollTrigger);
 // --------------------------------
-// Words Animation Data and Functionality
+// Scroll To
+// --------------------------------
+const aboutSection = document.getElementById('about');
+const projectsSection = document.getElementById('projects');
+const contactSection = document.getElementById('contact');
+const linkAbout = document.querySelector('.link-to-about')
+const linkProjects = document.querySelector('.link-to-projects')
+const linkContact = document.querySelector('.link-to-contact')
+linkAbout.addEventListener('click', () => aboutSection.scrollIntoView({behavior: 'smooth'}));
+linkProjects.addEventListener('click', () => projectsSection.scrollIntoView({behavior: 'smooth'}));
+linkContact.addEventListener('click', () => contactSection.scrollIntoView({behavior: 'smooth'}));
+// --------------------------------
+// Words Animation Data 
 // --------------------------------
 const swiperWrapper1 = document.querySelector('.swiper-wrapper1');
 const words = ['web development', 'innovation', 'design', 'technology', 'animation', 'game design', 'audio innovation', '3d', 'ambisonic mix'];
@@ -8,18 +21,35 @@ let allWords = words.map((word) => {
     return `<h3 class="words-animation contactInView swiper-slide">${word}</h3>`;
 }).join('');
 swiperWrapper1.innerHTML = allWords;
-
-setTimeout(() => {
-    const swiper1 = new Swiper('.swiper1', {
-        loop: true,
-        autoplay: {
-            delay: 1500
-        },
-        direction  : 'vertical',
-        clickable: false,
-        allowTouchMove: false
-    });
-}, '3000');
+// --------------------------------
+// Words Animation Functionality
+// --------------------------------
+const swiper1 = new Swiper('.swiper1', {
+    loop: true,
+    autoplay: {
+        delay: 1500
+    },
+    direction  : 'vertical',
+    clickable: false,
+    allowTouchMove: false
+});
+ScrollTrigger.create({
+    trigger: '.interested',
+    start: 'top 80%',
+    end: 'bottom 80%',
+    markers: true,
+    onEnter: () => {
+        setTimeout(() => {
+            swiper1.autoplay.start();
+        }, 1500);
+    },  
+    onLeaveBack: () => {
+        swiper1.autoplay.stop();
+    },
+});
+document.addEventListener('DOMContentLoaded', () => {
+    swiper1.autoplay.stop();
+});
 // --------------------------------
 // Projects Data and Functionality
 // --------------------------------
@@ -46,7 +76,7 @@ projectsContainer.appendChild(lineDiv);
 // --------------------------------
 // GSAP
 // --------------------------------
-gsap.registerPlugin(ScrollTrigger);
+
 // --------------------------------
 // Intro 
 // --------------------------------
@@ -72,7 +102,7 @@ gsap.to('.intro-p', {
     scrollTrigger: {
         trigger: '.intro-p',
         scrub: 0.7,
-        markers: true,
+        // markers: true,
         start: 'top center'
     },
     y: 300,
@@ -240,15 +270,4 @@ btn.addEventListener('mouseout', () => {
         swiper2.slidePrev();
     }, 500);
 });
-// --------------------------------
-// Scroll To
-// --------------------------------
-const aboutSection = document.getElementById('about');
-const projectsSection = document.getElementById('projects');
-const contactSection = document.getElementById('contact');
-const linkAbout = document.querySelector('.link-to-about')
-const linkProjects = document.querySelector('.link-to-projects')
-const linkContact = document.querySelector('.link-to-contact')
-linkAbout.addEventListener('click', () => aboutSection.scrollIntoView({behavior: 'smooth'}));
-linkProjects.addEventListener('click', () => projectsSection.scrollIntoView({behavior: 'smooth'}));
-linkContact.addEventListener('click', () => contactSection.scrollIntoView({behavior: 'smooth'}));
+
