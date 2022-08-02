@@ -270,3 +270,15 @@ btn.addEventListener('mouseout', () => {
         swiper2.slidePrev();
     }, 500);
 });
+// --------------------------------
+// Change Intro Text
+// --------------------------------
+const introText = document.querySelector('.line2-slide');
+window.addEventListener('resize', (event) => {
+    let width = event.currentTarget.innerWidth;
+    if (width <= 490) {
+        introText.innerText = 'Developer';
+    } else {
+        introText.innerText = 'Web Developer';
+    }
+});

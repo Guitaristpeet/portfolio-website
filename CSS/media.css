@@ -17,10 +17,10 @@
     /* Root */
     /* ---------------- */
     :root {
-        --fs-h1: clamp(14.1rem, 18vw + 7rem, 21.8rem);
+        --fs-h1: clamp(1rem, 24.5vw + 1rem, 21.8rem);
         --fs-h2: clamp(11.3rem, 17.69vw + 1rem, 22rem);
         --fs-h3: clamp(4.1rem, 5vw + 4rem, 7.6rem);
-        --fs-p: clamp(0.1rem, 0.7vw + 0.7rem, 1.6rem);
+        --fs-p: clamp(0.1rem, 0.7vw + 1rem, 1.6rem);
         --fs1-2: 1.2rem;
         --fs1-3: 1.4rem;
         --fs2-1: 1.6rem;
@@ -54,7 +54,7 @@
         width: 49rem;
     }
     .container {
-        padding: 0 60px;
+        padding: 0 55px;
     }
     .scroll {
         justify-content: space-around;
@@ -76,7 +76,20 @@
         display: block;
     }
 }
-@media (max-width: 430px) {
+@media (max-width: 700px) {
+    :root {
+        --fs-h1: clamp(1rem, 23.2vw + 0.8rem, 18rem);
+    }
+    .intro-line2 p {
+        width: 42rem;
+    }
+}
+@media (max-width: 565px) {
+    :root {
+        --fs-h1: clamp(1rem, 21.4vw + 0.8rem, 14rem);
+    }
+}
+@media (max-width: 440px) {
     /* ---------------- */
     /* Root */
     /* ---------------- */
@@ -96,4 +109,5 @@
         --fs3: 1rem;
         --fs-btn: 0.9rem;
     }
+    .change-intro
 }
