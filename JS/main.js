@@ -218,7 +218,8 @@ sections.forEach((section, i) => {
         scrollTrigger: {
             trigger: section,
             scrub: true,
-            start: 'top bottom',
+            markers: true,
+            start: '20% bottom',
             end: '+=100%'
         }
     })
@@ -270,7 +271,6 @@ btn.addEventListener('mouseout', () => {
         swiper2.slidePrev();
     }, 500);
 });
-
 /* ---------------- */
 /* Try
 /* ---------------- */
@@ -280,11 +280,86 @@ btn.addEventListener('mouseout', () => {
 
 //     gsap.set('.cursor', {
 //         x: mouseX,
-//         y: mouseY,
+//         y: mouseY
 //     });
-//     gsap.to('.shape', {
-//         x: mouseX,
-//         y: mouseY,
-//         stagger: -0.05
-//     });
+//     // gsap.to('.shape', {
+//     //     x: mouseX,
+//     //     y: mouseY,
+//     //     stagger: -0.05
+//     // });
 // });
+/* ---------------- */
+/* Cursor
+/* ---------------- */
+// const cursor = document.querySelector('.cursor');
+// document.addEventListener('mousemove', (event) => {
+//     cursor.setAttribute('style', 'top: '+ (event.pageY - 20) + 'px; left: ' + (event.pageX -20) + 'px;' )
+// });
+document.body.addEventListener('mousemove', event => {
+    const mouseX = event.pageX;
+    const mouseY = event.pageY;
+
+    gsap.set('.cursor', {
+        x: mouseX,
+        y: mouseY
+    });
+});
+// const fadeOut = gsap.timeline();
+// ScrollTrigger.create({
+//     trigger: '.projects',
+//     start: '20% 80%',
+//     end: '80% 20%',
+//     markers: true,
+//     onEnter: () => {
+//         cursor.classList.add('show-cursor');
+//         gsap.from('.cursor', {
+//             opacity: 0,
+//             duration: 1,
+//         });
+//     },  
+//     onLeave: () => {
+//         fadeOut.to('.cursor', {
+//             opacity: 0,
+//             duration: 1,
+//         });
+//         fadeOut.to(() => {
+//             cursor.classList.remove('show-cursor');
+//             console.log('leave');
+//         });
+//     },
+//     onEnterBack: () => {
+//         cursor.classList.add('show-cursor');
+//         gsap.from('.cursor', {
+//             opacity: 0,
+//             duration: 1,
+//         });
+//     },
+//     onLeaveBack: () => {
+//         fadeOut.to('.cursor', {
+//             opacity: 0,
+//             duration: 1,
+//         });
+//         fadeOut.to(() => {
+//             cursor.classList.remove('show-cursor');
+//             console.log('leave');
+//         });
+//     },
+// });
+// -------- from you tube --------------
+// const cursor = document.querySelector('.cursor');
+// window.addEventListener('mousemove', moveCursor);
+// function moveCursor(e){
+//     document.addEventListener('scroll', () => {
+//         var windowHeight = window.innerHeight;
+//         var scrolled = document.scrollingElement.scrollTop;
+//         var docHeight = document.body.clientHeight;
+//         var heightChange = (scrolled / (docHeight - windowHeight)) * 100;
+//         gsap.set('.cursor', {
+//         x: e.clientX,
+//         y: e.clientY + heightChange,
+//     });
+//     });
+// }
+
+// function progress(){
+// };

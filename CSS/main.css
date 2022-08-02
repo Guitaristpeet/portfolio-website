@@ -18,7 +18,7 @@
 :root {
     --white: #ffffff;
     --black: #121212;
-    --light-black: #1D2023;
+    --light-black: ##1C232E;
     --gray: rgb(87, 87, 87);
     --blue: #0038ff;
 
@@ -642,20 +642,53 @@ h4 {
     margin: -135px 0 0 -135px;
     z-index: -10;
 }
+.mix-blend {
+    mix-blend-mode: screen;
+} */
+/* ---------------- */
+/* Cursor
+/* ---------------- */
 .cursor {
     position: absolute;
     top: 0;
     left: 0;
-    background: blue;
-    width: 15px;
-    height: 15px;
+    background: #565656;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    margin: -7.5px 0 0 -7.5px;
+    margin: -20px 0 0 -20px;
     will-change: transfomr;
     user-select: none;
     pointer-events: none;
     z-index: 4;
+    /* transition-duration: 100ms; */
+    /* transition-timing-function: ease-out; */
+    /* animation: cursorAnim .5s infinite alternate; */
+    /* visibility: hidden; */
+    /* opacity: 0; */
 }
-.mix-blend {
-    mix-blend-mode: screen;
+.cursor::after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border: 7px solid #56565660;
+    border-radius: 50%;
+    top: -7px;
+    left: -7px;
+    /* visibility: hidden; */
+}
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.9);
+    }
+}
+/* .show-cursor {
+    visibility: visible;
+}
+.cursor.show-cursor::after {
+    visibility: visible;
 } */
