@@ -109,5 +109,13 @@
         --fs3: 1rem;
         --fs-btn: 0.9rem;
     }
-    .change-intro
+    /* ---------------- */
+    /* Intro */
+    /* ---------------- */
+    .container {
+        padding: 0 35px;
+    }
+    .nav-links {
+        display: none;
+    }
 }
