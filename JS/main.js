@@ -218,7 +218,6 @@ sections.forEach((section, i) => {
         scrollTrigger: {
             trigger: section,
             scrub: true,
-            markers: true,
             start: '20% bottom',
             end: '+=100%'
         }
@@ -295,15 +294,15 @@ btn.addEventListener('mouseout', () => {
 // document.addEventListener('mousemove', (event) => {
 //     cursor.setAttribute('style', 'top: '+ (event.pageY - 20) + 'px; left: ' + (event.pageX -20) + 'px;' )
 // });
-document.body.addEventListener('mousemove', event => {
-    const mouseX = event.pageX;
-    const mouseY = event.pageY;
+// document.body.addEventListener('mousemove', event => {
+//     const mouseX = event.pageX;
+//     const mouseY = event.pageY;
 
-    gsap.set('.cursor', {
-        x: mouseX,
-        y: mouseY
-    });
-});
+//     gsap.set('.cursor', {
+//         x: mouseX,
+//         y: mouseY
+//     });
+// });
 // const fadeOut = gsap.timeline();
 // ScrollTrigger.create({
 //     trigger: '.projects',

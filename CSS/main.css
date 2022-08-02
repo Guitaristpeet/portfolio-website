@@ -21,6 +21,7 @@
     --light-black: ##1C232E;
     --gray: rgb(87, 87, 87);
     --blue: #0038ff;
+    --lightblue: #4E75FF;
 
     --roboto: 'Roboto Flex',sans-serif;
     --space: 'Space Grotesk',sans-serif;
@@ -600,13 +601,14 @@ h4 {
 /* Social Links Hover */
 /* ---------------- */
 .social-links path {
-    transition: all 0.3s ease;
+    transition: all 0.2s ease-in-out;
 }
 .social-links li:hover path {
     fill: var(--lightblue);
 }
 .footer-content a {
     text-transform: capitalize;
+    transition: all 0.2s ease-in-out;
 }
 .footer-content a:hover {
     color: var(--lightblue);
