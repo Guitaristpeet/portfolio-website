@@ -18,7 +18,7 @@
 :root {
     --white: #ffffff;
     --black: #121212;
-    --light-black: ##1C232E;
+    --light-black: #1C232E;
     --gray: rgb(87, 87, 87);
     --blue: #0038ff;
     --lightblue: #4E75FF;
@@ -26,21 +26,27 @@
     --roboto: 'Roboto Flex',sans-serif;
     --space: 'Space Grotesk',sans-serif;
 
-    --fs-h1: clamp(9.5rem, 18vw + 1rem, 26.8rem);
-    --fs-h2: clamp(6rem, 17.69vw + 1rem, 24rem);
-    --fs-h3: clamp(6rem, 6vw + 1rem, 8.8rem);
-    --fs1: 1.6rem;
-    --fs2: 1.8rem;
+    --fs-h1: clamp(1rem, 18vw + 1rem, 26.8rem);
+    --fs-h2: clamp(22.1rem, 17.69vw + 1rem, 24rem);
+    --fs-h3: clamp(7.7rem, 6vw + 1rem, 8.8rem);
+    --fs-p: clamp(0.5rem, 0.7vw + 1rem, 2rem);
+    --fs1-1: 1.6rem;
+    --fs1-2: 1.6rem;
+    --fs1-3: 1.6rem;
+    --fs2-1: 1.8rem;
+    --fs2-2: 1.8rem;
+    --fs2-3: 2rem;
+    --fs2-4: 2rem;
+    --fs2-5: 1.8rem;
     --fs3: 2rem;
-    --fs-p: clamp(12px, 0.7vw + 1rem, 2rem);
     --fs-btn: 2.4rem;
 }
-@media (min-width: 1440px) {
+/* @media (min-width: 1240px) {
     :root {
         --fs-h1: 26.8rem;
         --fs-p: 2rem;
     }
-}
+} */
 a {
     text-decoration: none;
     color: var(--white);
@@ -73,7 +79,7 @@ h1, h2, h3, h4, .btn {
 /* ---------------- */
 .logo {
     font-weight: 700;
-    font-size: var(--fs1);
+    font-size: var(--fs1-1);
     line-height: 97.5%;
     letter-spacing: 0.28em;
     cursor: pointer;
@@ -83,11 +89,10 @@ h1, h2, h3, h4, .btn {
 /* ---------------- */
 .nav-links a {
     font-variation-settings: 'wght' 200;
-    font-size: var(--fs1);
+    font-size: var(--fs1-1);
     line-height: 97.5%;
     letter-spacing: 0.2em;
 }
-
 /* ---------------- */
 /* Fonts Heading*/
 /* ---------------- */
@@ -171,17 +176,26 @@ h3 {
 .scroll p {
     font-family: 'Space Grotesk';
     font-variation-settings: 'wght' 200;
-    font-size: var(--fs1);
+    font-size: var(--fs1-2);
     line-height: 138%;
     letter-spacing: 0.03em;
     transform: rotate(-90deg);
 }
 .about-icon p, .contact-heading p {
     text-align: center;
+    font-size: var(--fs2-1);
+}
+.projects-heading p {
+    font-size: var(--fs2-2);
+}
+.project-num {
+    font-size: var(--fs2-3);
+}
+.project-info p {
+    font-size: var(--fs2-4);
 }
 .about-icon p, .projects-heading p, .project-content p, .contact-heading p {
     font-variation-settings: 'wght' 340;
-    font-size: var(--fs2);
     line-height: 110%;
     letter-spacing: 0.16em;
 }
@@ -201,7 +215,7 @@ h3 {
 }
 .copy-email {
     font-weight: 700;
-    font-size: var(--fs2);
+    font-size: var(--fs2-5);
     line-height: 110%;
     text-align: center;
     letter-spacing: 0.16em;
@@ -212,7 +226,7 @@ h3 {
 footer p, .myName {
     font-variation-settings:
             'wght' 200;
-    font-size: var(--fs1);
+    font-size: var(--fs1-3);
     line-height: 120%;
     letter-spacing: 0.03em;
 }
@@ -313,7 +327,7 @@ footer p, .myName {
 /* ---------------- */
 .about {
     padding: 190px 0 280px 0;
-    /* background-color: var(--light-black); */
+    background-color: var(--light-black);
 }
 .about-icon {
     width: fit-content;
@@ -333,8 +347,14 @@ footer p, .myName {
     max-width: 849px;
     margin: 0 auto;
 }
-.about-icon, .hello{
+.about-icon, .hello {
     margin-bottom: 3.7rem;
+}
+.hello h3 {
+    display: inline;
+}
+.about .container {
+    text-align: center;
 }
 /* ---------------- */
 /* Projects */
@@ -401,7 +421,7 @@ footer p, .myName {
 /* Contact */
 /* ---------------- */
 .contact {
-    /* background-color: var(--light-black); */
+    background-color: var(--light-black);
     padding: 115px 0 200px 0;
     text-align: center;
 }
@@ -650,7 +670,7 @@ h4 {
 /* ---------------- */
 /* Cursor
 /* ---------------- */
-.cursor {
+/* .cursor {
     position: absolute;
     top: 0;
     left: 0;
@@ -663,11 +683,6 @@ h4 {
     user-select: none;
     pointer-events: none;
     z-index: 4;
-    /* transition-duration: 100ms; */
-    /* transition-timing-function: ease-out; */
-    /* animation: cursorAnim .5s infinite alternate; */
-    /* visibility: hidden; */
-    /* opacity: 0; */
 }
 .cursor::after {
     content: '';
@@ -678,7 +693,6 @@ h4 {
     border-radius: 50%;
     top: -7px;
     left: -7px;
-    /* visibility: hidden; */
 }
 @keyframes cursorAnim {
     from {
@@ -687,10 +701,4 @@ h4 {
     to {
         transform: scale(.9);
     }
-}
-/* .show-cursor {
-    visibility: visible;
-}
-.cursor.show-cursor::after {
-    visibility: visible;
 } */
