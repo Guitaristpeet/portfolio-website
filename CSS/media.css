@@ -118,4 +118,11 @@
     .nav-links {
         display: none;
     }
+    /* ---------------- */
+    /* Line */
+    /* ---------------- */
+    .line {
+        width: calc(100vw - 70px);
+        margin: 0 35px;
+    }
 }
