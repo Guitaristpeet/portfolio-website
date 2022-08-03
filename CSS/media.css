@@ -150,9 +150,25 @@
     .intro-line2 p {
         width: 18rem;
     }
-
-
-
+    /* ---------------- */
+    /* About */
+    /* ---------------- */
+    .about-star {
+        width: 56px;
+    }
+    .about-icon {
+        margin-bottom: 0.6rem;
+    }
+    .hello {
+        margin-bottom: 4.5rem;
+    }
+    .hello h3 {
+        height: 4rem;
+    }
+    .about {
+        padding-top: 70px;
+        padding-bottom: 140px;
+    }
 
 
     .btn {
