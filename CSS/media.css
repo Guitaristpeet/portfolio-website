@@ -17,7 +17,7 @@
         --fs2-1: 1.6rem;
         --fs2-4: 1.6rem;
         --fs2-5: 1.6rem;
-        --fs3: 1.6rem;
+        --fs3: clamp(1rem, 1vw + 1rem, 1.6rem);
         --fs-btn: 2rem;
     }
     /* ---------------- */
@@ -81,6 +81,7 @@
 @media (max-width: 565px) {
     :root {
         --fs-h1: clamp(1rem, 21.4vw + 0.8rem, 14rem);
+        --fs-h3: clamp(1rem, 6vw + 3rem, 6.6rem);
     }
     .nav-links {
         display: none;
