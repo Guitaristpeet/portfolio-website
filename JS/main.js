@@ -67,6 +67,12 @@ let allProject = projects.map((project, index) => {
                     <p class="project-desc">${project.desc}</p>
                     <p class="technology">${project.technologies}</p>
                 </div>
+                <button class="btn visit-btn projInView">
+                    <div>
+                        <p class='visit-btn-text'>visit site</p>
+                        <img class="arrow-right" src="./ASSETS/SVGs/down arrow.svg" alt="right Arrow Icon">
+                    </div>
+                </button>
             </div>`;
     projectsContainer.appendChild(div);
 });
