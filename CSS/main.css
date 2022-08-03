@@ -291,6 +291,7 @@ footer p, .myName {
     margin-top: 150px;
     padding: 95px 0 190px 0;
     position: relative;
+    background-color: var(--light-black);
 }
 .intro-line1, .intro-line2 {
     width: 100%;

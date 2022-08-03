@@ -1,12 +1,3 @@
-
-@media (max-width: 834px) {
-    /* ---------------- */
-    /* Fonts Navbar*/
-    /* ---------------- */
-    .nav-links a, .logo {
-        font-size: 1.6rem;
-    }
-}
 @media (max-width: 1100px) {
     .intro-line2 p {
         margin-left: 3%;
@@ -41,7 +32,7 @@
     /* Intro */
     /* ---------------- */
     .intro {
-        margin-top: 150px;
+        margin-top: 142px;
         padding: 95px 0 220px 0;
     }
     .intro-line2 {
@@ -67,7 +58,7 @@
     /* Header */
     /* ---------------- */
     .header-wrapper {
-        padding: 68.5px 0 56.5px 0;;
+        padding: 68.5px 0 56.5px 0;
     }
     /* ---------------- */
     /* About */
@@ -87,6 +78,9 @@
 @media (max-width: 565px) {
     :root {
         --fs-h1: clamp(1rem, 21.4vw + 0.8rem, 14rem);
+    }
+    .nav-links {
+        display: none;
     }
 }
 @media (max-width: 440px) {
@@ -115,14 +109,23 @@
     .container {
         padding: 0 35px;
     }
-    .nav-links {
-        display: none;
-    }
     /* ---------------- */
     /* Line */
     /* ---------------- */
     .line {
         width: calc(100vw - 70px);
         margin: 0 35px;
+    }
+    /* ---------------- */
+    /* Header */
+    /* ---------------- */
+    .header-wrapper {
+        padding: 31px 0 28px 0;
+    }
+    .header-content {
+        padding: 0 35px;
+    }
+    .intro {
+        margin-top: 70px;
     }
 }
