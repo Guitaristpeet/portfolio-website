@@ -9,13 +9,13 @@
     /* ---------------- */
     :root {
         --fs-h1: clamp(1rem, 24.5vw + 1rem, 21.8rem);
-        --fs-h2: clamp(11.3rem, 17.69vw + 1rem, 22rem);
+        --fs-h2: clamp(1rem, 16.69vw + 8rem, 22rem);
         --fs-h3: clamp(4.1rem, 5vw + 4rem, 7.6rem);
         --fs-p: clamp(0.1rem, 0.7vw + 1rem, 1.6rem);
         --fs1-2: 1.2rem;
         --fs1-3: 1.4rem;
         --fs2-1: 1.6rem;
-        --fs2-4: 1.6rem;
+        --fs2-4: clamp(0.1rem, 0.7vw + 1rem, 1.6rem);
         --fs2-5: 1.6rem;
         --fs3: clamp(1rem, 1vw + 1rem, 1.6rem);
         --fs-btn: 2rem;
@@ -69,13 +69,115 @@
     .about {
         padding: 110px 0 190px 0;
     }
+    /* ---------------- */
+    /* Projects */
+    /* ---------------- */
+    .project-content {
+        display: block;
+        /* justify-content: space-between; */
+        align-items: flex-start;
+        padding: 0;
+        /* width: 100%; */
+        position: relative;
+        min-height: 305px;
+    }
+    .project-num, .project-name {
+        display: inline;
+        position: absolute;
+        margin-top: 20px;
+    }
+    .project-num {
+        top: 23px;
+        left: 0;
+        margin-right: 20px;
+    }
+    .project-name {
+        top: 0;
+        left: 50px;
+    }
+    .project-content h2 {
+        width: 100%;
+    }
+    .project-info {
+        width: 100%;
+        /* display: block; */
+        justify-items: left;
+        position: absolute;
+        bottom: -20px;
+        left: 55px;
+        margin-bottom: 60px;
+        /* text-align: left; */
+    }
+    .project-desc, .technology {
+        /* display: inline; */
+    }
+    .project-info p {
+        width: fit-content;
+    }
+    /* .technology {
+        display: block;
+
+    } */
 }
 @media (max-width: 700px) {
     :root {
         --fs-h1: clamp(1rem, 23.2vw + 0.8rem, 18rem);
+        --fs-h2: clamp(1rem, 15.69vw + 7rem, 19rem);
     }
     .intro-line2 p {
         width: 42rem;
+    }
+    .project-name {
+        left: 30px;
+    }
+    .project-info {
+        left: 35px;
+    }
+    .project-content {
+        min-height: 285px;
+    }
+    /* ---------------- */
+    /* Hover Project-name */
+    /* ---------------- */
+    @keyframes h2anim-in {
+        0% {
+            /* font-weight: 420; */
+            font-variation-settings:
+                'wght' 420,
+                'wdth' 32,
+                'GRAD' -40;
+        }
+
+        70% {
+            font-variation-settings:
+                'wght' 460,
+                'wdth' 35,
+                'GRAD' 0;
+        }
+
+        100% {
+            /* font-weight: 500; */
+            font-variation-settings:
+                'wght' 450,
+                'wdth' 34,
+                'GRAD' 0;
+        }
+    }
+
+    @keyframes h2anim-out {
+        0% {
+            font-variation-settings:
+                'wght' 450,
+                'wdth' 34,
+                'GRAD' 0;
+        }
+
+        100% {
+            font-variation-settings:
+                'wght' 420,
+                'wdth' 32,
+                'GRAD' -40;
+        }
     }
 }
 @media (max-width: 565px) {

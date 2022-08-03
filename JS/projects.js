@@ -2,7 +2,7 @@ const projects = [
     {
         id: 4,
         name: 'valla table',
-        desc: "Hell's Kitchen Thai Restaurant",
+        desc: "Thai Restaurant",
         info: '',
         technologies: 'html / css / javascript',
         img: '',
@@ -11,7 +11,7 @@ const projects = [
     {
         id: 3,
         name: 'poveda',
-        desc: 'Bali Travel Agency Site',
+        desc: 'Travel Agency Site',
         info: '',
         technologies: 'html / css / javascript',
         img: '',
@@ -20,7 +20,7 @@ const projects = [
     {
         id: 2,
         name: 'stornoway',
-        desc: 'construction company profile',
+        desc: 'construction company',
         info: '',
         technologies: 'html / css / javascript',
         img: '',
@@ -29,7 +29,7 @@ const projects = [
     {
         id: 1,
         name: 'real & true',
-        desc: "an artist's portfolio site",
+        desc: "portfolio site",
         info: '',
         technologies: 'html / css / javascript',
         img: '',

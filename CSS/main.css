@@ -27,7 +27,7 @@
     --space: 'Space Grotesk',sans-serif;
 
     --fs-h1: clamp(1rem, 18vw + 1rem, 26.8rem);
-    --fs-h2: clamp(22.1rem, 17.69vw + 1rem, 24rem);
+    --fs-h2: clamp(18rem, 17.69vw + 1rem, 24rem);
     --fs-h3: clamp(7.7rem, 6vw + 1rem, 8.8rem);
     --fs-p: clamp(0.5rem, 0.7vw + 0.7rem, 2rem);
     --fs1-1: 1.6rem;
@@ -35,8 +35,8 @@
     --fs1-3: 1.6rem;
     --fs2-1: 1.8rem;
     --fs2-2: 1.8rem;
-    --fs2-3: 2rem;
-    --fs2-4: 2rem;
+    --fs2-3: clamp(0.5rem, 1vw + 0.8rem, 2rem);
+    --fs2-4: clamp(1px, 1vw + 0.5rem, 2rem);
     --fs2-5: 1.8rem;
     --fs3: 2rem;
     --fs-btn: 2.4rem;
@@ -200,12 +200,10 @@ h3 {
     letter-spacing: 0.16em;
 }
 .project-content p {
-    font-size: 2rem;
     letter-spacing: 0.03em;
 }
 .project-info p {
     font-variation-settings: 'wght' 340;
-    font-size: 2rem;
     line-height: 148%;
     text-align: right;
     letter-spacing: 0.03em;
@@ -383,10 +381,10 @@ footer p, .myName {
     width: 1%;
 }
 .project-content h2 {
-    width: 62%;
+    width: 73%;
 }
 .project-info {
-    width: 31%;
+    width: 20%;
     display: flex;
     flex-direction: column;
 }
