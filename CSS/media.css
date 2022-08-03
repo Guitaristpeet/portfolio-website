@@ -128,4 +128,7 @@
     .intro {
         margin-top: 70px;
     }
+    .intro-line2 p {
+        width: 18rem;
+    }
 }
