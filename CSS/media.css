@@ -114,6 +114,7 @@
     }
     .scroll {
         justify-content: space-evenly;
+        transform: translate(-20%, -25%);
     }
     .scroll-down {
         margin-left: 1px;
@@ -142,5 +143,16 @@
     }
     .intro-line2 p {
         width: 18rem;
+    }
+
+
+
+
+
+    .btn {
+        padding: 0;
+    }
+    .swiper2 {
+        width: 200px;
     }
 }
