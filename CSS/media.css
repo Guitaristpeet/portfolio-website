@@ -229,6 +229,9 @@
         width: calc(100vw - 70px);
         margin: 0 35px;
     }
+    .project {
+        width: calc(100vw - 70px);
+    }
     .projects .container {
         padding: 0 35px;
     }
@@ -303,7 +306,29 @@
         padding-top: 70px;
         padding-bottom: 140px;
     }
-
+    /* ---------------- */
+    /* Projects */
+    /* ---------------- */
+    .project-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: left;
+        /* min-height: 200px; */
+    }
+    .project-num, .project-content h2, .project-info {
+        width: 100%;
+        display: block;
+        position:initial;
+    }
+    .project-num {
+        margin-top: 25px;
+    }
+    .project-content h2 {
+        margin: -3px 0 -5px 0;
+    }
+    
 
     .btn {
         padding: 0;
