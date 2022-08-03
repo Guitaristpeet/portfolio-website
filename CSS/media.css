@@ -109,6 +109,18 @@
     .container {
         padding: 0 35px;
     }
+    .intro {
+        padding: 95px 0 165px 0;
+    }
+    .scroll {
+        justify-content: space-evenly;
+    }
+    .scroll-down {
+        margin-left: 1px;
+    }
+    .arrow-down {
+        width: 10px;
+    }
     /* ---------------- */
     /* Line */
     /* ---------------- */

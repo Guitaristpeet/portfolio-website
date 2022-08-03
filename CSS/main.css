@@ -328,7 +328,7 @@ footer p, .myName {
 /* ---------------- */
 .about {
     padding: 190px 0 280px 0;
-    background-color: var(--light-black);
+    /* background-color: var(--light-black); */
 }
 .about-icon {
     width: fit-content;
