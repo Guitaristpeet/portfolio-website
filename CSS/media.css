@@ -315,7 +315,7 @@
         flex-direction: column;
         align-items: left;
         justify-content: left;
-        /* min-height: 200px; */
+        min-height: 230px;
     }
     .project-num, .project-content h2, .project-info {
         width: 100%;
@@ -327,6 +327,9 @@
     }
     .project-content h2 {
         margin: -3px 0 -5px 0;
+    }
+    .project-info {
+        margin-bottom: 10px;
     }
     /* ---------------- */
     /* Visit btn */
@@ -349,7 +352,10 @@
         width: 8px;
         transform: rotate(-90deg);
     }
-
+    .visit-btn {
+        display: inline;
+        margin: 0;
+    }
 
     .btn {
         padding: 0;
