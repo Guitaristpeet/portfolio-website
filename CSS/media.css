@@ -248,6 +248,9 @@
     .project-num {
         margin-top: 9px;
     }
+    .proj-star {
+        width: 4rem;
+    }
 }
 @media (max-width: 440px) {
     /* ---------------- */
@@ -331,6 +334,9 @@
     .project-info {
         margin-bottom: 10px;
     }
+    .proj-star {
+        width: 2.1rem;
+    }
     /* ---------------- */
     /* Visit btn */
     /* ---------------- */
@@ -362,5 +368,10 @@
     }
     .swiper2 {
         width: 200px;
+    }
+}
+@media (min-width: 440px) {
+    .visit-btn {
+        display: none !important;
     }
 }

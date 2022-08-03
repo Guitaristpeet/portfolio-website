@@ -67,7 +67,7 @@ let allProject = projects.map((project, index) => {
                     <p class="project-desc">${project.desc}</p>
                     <p class="technology">${project.technologies}</p>
                 </div>
-                <button class="btn visit-btn projInView">
+                <button class="btn visit-btn projInView" onclick={window.open('${project.url}')}>
                     <div>
                         <p class='visit-btn-text'>visit site</p>
                         <img class="arrow-right" src="./ASSETS/SVGs/down arrow.svg" alt="right Arrow Icon">
@@ -232,12 +232,12 @@ sections.forEach((section, i) => {
 // --------------------------------
 // Button Functionalities
 // --------------------------------
-const btn = document.querySelector('.btn');
+const emailBtn = document.querySelector('.email-btn');
 const myEmail = document.querySelector('.email');
 var copyText = document.querySelector('.copy-email');
 copyText.innerHTML = copyText.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-btn.addEventListener('mouseover', () => {
+emailBtn.addEventListener('mouseover', () => {
     anime({
         targets: '.copy-email span',
         translateY: [20, 0],
@@ -251,7 +251,7 @@ const swiper2 = new Swiper('.swiper2', {
     clickable: false,
     allowTouchMove: false
 });
-    btn.addEventListener('click', () => {
+    emailBtn.addEventListener('click', () => {
         copyToClipboard();
         
         swiper2.slideNext();
@@ -264,7 +264,7 @@ const swiper2 = new Swiper('.swiper2', {
         document.execCommand('copy');
         inputEl.parentNode.removeChild(inputEl);
     };
-btn.addEventListener('mouseout', () => {
+emailBtn.addEventListener('mouseout', () => {
     anime({
         targets: '.copy-email span',
         translateY: [0, 20],
