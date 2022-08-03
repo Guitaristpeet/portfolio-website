@@ -136,6 +136,9 @@
     .project-content {
         min-height: 285px;
     }
+    .project-num {
+        margin-top: 15px;
+    }
     /* ---------------- */
     /* Hover Project-name */
     /* ---------------- */
@@ -179,10 +182,19 @@
                 'GRAD' -40;
         }
     }
+    .project-name {
+        animation: h2anim-out 220ms both ease-in;
+        transition: all 170ms ease-in;
+    }
+
+    .project-name:hover {
+        animation: h2anim-in 120ms both ease-in-out;
+    }
 }
 @media (max-width: 565px) {
     :root {
         --fs-h1: clamp(1rem, 21.4vw + 0.8rem, 14rem);
+        --fs-h2: clamp(1rem, 13.69vw + 5rem, 15rem);
         --fs-h3: clamp(1rem, 6vw + 3rem, 6.6rem);
     }
     .nav-links {
@@ -216,6 +228,22 @@
     .line {
         width: calc(100vw - 70px);
         margin: 0 35px;
+    }
+    .projects .container {
+        padding: 0 35px;
+    }
+    .project-line {
+        margin: 0;
+    }
+    .project-line-last {
+        width: calc(100vw - 70px);
+        margin: 0 35px;
+    }
+    .project-content {
+        min-height: 240px;
+    }
+    .project-num {
+        margin-top: 9px;
     }
 }
 @media (max-width: 440px) {
