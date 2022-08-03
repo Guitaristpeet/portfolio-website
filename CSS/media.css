@@ -328,7 +328,28 @@
     .project-content h2 {
         margin: -3px 0 -5px 0;
     }
-    
+    /* ---------------- */
+    /* Visit btn */
+    /* ---------------- */
+    .visit-btn div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: fit-content;
+        padding: 5px 10px;
+    }
+    .visit-btn-text {
+        height: fit-content;
+        width: fit-content;
+        color: var(--white);
+        font-size: 1rem;
+        margin-right: 8px;
+    }
+    .arrow-right {
+        width: 8px;
+        transform: rotate(-90deg);
+    }
+
 
     .btn {
         padding: 0;
