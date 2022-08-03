@@ -89,6 +89,32 @@
     .intro-line2 p {
         width: 34rem;
     }
+    .container {
+        padding: 0 35px;
+    }
+    .header-content {
+        padding: 0 35px;
+    }
+    .scroll {
+        justify-content: space-evenly;
+        transform: translate(0%, -25%);
+    }
+    .scroll-down {
+        margin-left: 1px;
+    }
+    .scroll p {
+        margin-top: -20px;
+    }
+    .arrow-down {
+        width: 10px;
+    }
+    /* ---------------- */
+    /* Line */
+    /* ---------------- */
+    .line {
+        width: calc(100vw - 70px);
+        margin: 0 35px;
+    }
 }
 @media (max-width: 440px) {
     /* ---------------- */
@@ -113,37 +139,14 @@
     /* ---------------- */
     /* Intro */
     /* ---------------- */
-    .container {
-        padding: 0 35px;
-    }
     .intro {
         padding: 95px 0 165px 0;
-    }
-    .scroll {
-        justify-content: space-evenly;
-        transform: translate(-20%, -25%);
-    }
-    .scroll-down {
-        margin-left: 1px;
-    }
-    .arrow-down {
-        width: 10px;
-    }
-    /* ---------------- */
-    /* Line */
-    /* ---------------- */
-    .line {
-        width: calc(100vw - 70px);
-        margin: 0 35px;
     }
     /* ---------------- */
     /* Header */
     /* ---------------- */
     .header-wrapper {
         padding: 31px 0 28px 0;
-    }
-    .header-content {
-        padding: 0 35px;
     }
     .intro {
         margin-top: 70px;
