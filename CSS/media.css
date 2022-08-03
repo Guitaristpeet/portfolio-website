@@ -82,6 +82,9 @@
     .nav-links {
         display: none;
     }
+    .intro-line2 p {
+        width: 34rem;
+    }
 }
 @media (max-width: 440px) {
     /* ---------------- */
