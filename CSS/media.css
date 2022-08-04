@@ -126,12 +126,23 @@
     .contact-star {
         width: 60px;
     }
+    .contact {
+        padding: 120px 0 200px 0;
+    }
+    .email-btn {
+        /* line-height: 100%; */
+        /* padding: 1.37em 1.4em; */
+    }
+    .swiper2 {
+        width: 365px;
+    }
 }
 @media (max-width: 700px) {
     :root {
         --fs-h1: clamp(1rem, 23.2vw + 0.8rem, 18rem);
         --fs-h2: clamp(1rem, 15.69vw + 7rem, 19rem);
         --fs-h3: clamp(1rem, 4vw + 2.7rem, 6rem);
+        --fs-btn: 1.6rem;
     }
     h3 {
         line-height: 60px;
@@ -208,12 +219,21 @@
     .swiper1 {
         height: 5.5rem;
     }
+    .email-btn {
+        /* line-height: 210%; */
+        padding: 15em 0em;
+    }
+
+    .swiper2 {
+        width: 325px;
+    }
 }
 @media (max-width: 565px) {
     :root {
         --fs-h1: clamp(1rem, 21.4vw + 0.8rem, 14rem);
         --fs-h2: clamp(1rem, 13.69vw + 5rem, 15rem);
-        --fs-h3: clamp(1rem, 4vw + 2.3rem, 5rem)
+        --fs-h3: clamp(1rem, 4vw + 2.3rem, 5rem);
+        --fs-btn: 1.2rem;
     }
     h3 {
         line-height: 45px;
@@ -277,6 +297,14 @@
     /* ---------------- */
     .swiper1 {
         height: 4.7rem;
+    }
+    .email-btn {
+        /* line-height: 210%; */
+        padding: 9em 0em;
+    }
+
+    .swiper2 {
+        width: 225px;
     }
 }
 @media (max-width: 440px) {
@@ -421,6 +449,14 @@
     /* ---------------- */
     .swiper1 {
         height: 4.2rem;
+    }
+    .email-btn {
+        /* line-height: 210%; */
+        padding: 5em 0em;
+    }
+
+    .swiper2 {
+        width: 170px;
     }
 }
 @media (min-width: 440px) {

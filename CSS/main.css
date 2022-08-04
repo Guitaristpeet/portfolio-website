@@ -457,11 +457,13 @@ footer p, .myName {
     color: var(--white);
     font-variation-settings:
         'wght' 800;
-    font-size: var(--fs-btn);
-    line-height: 84%;
+    /* font-size: var(--fs-btn); */
+    /* line-height: 84%; */
+    line-height: 235%;
     letter-spacing: 0.05em;
     border: 1px solid var(--white);
-    padding: 1.37em 1.4em;
+    padding: 18em 0em;
+    /* padding: 1.37em 1.4em; */
     border-radius: 50px;
     margin: 0 auto 55px auto;
     cursor: pointer;
@@ -611,13 +613,13 @@ footer p, .myName {
 /* Click */
 /* ---------------- */
 .swiper2 {
-    width: 440px;
+    width: 410px;
 }
 .swiper-slide {
     height: 23px
 }
 h4 {
-    font-size: 2.4rem;
+    font-size: var(--fs-btn);
     display: inline-block;
     width: fit-content;
 }
