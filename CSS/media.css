@@ -202,6 +202,12 @@
     .project-name:hover {
         animation: h2anim-in 120ms both ease-in-out;
     }
+    /* ---------------- */
+    /* Word Animation */
+    /* ---------------- */
+    .swiper1 {
+        height: 5.5rem;
+    }
 }
 @media (max-width: 565px) {
     :root {
@@ -265,6 +271,12 @@
     }
     .proj-star {
         width: 4rem;
+    }
+    /* ---------------- */
+    /* Word Animation */
+    /* ---------------- */
+    .swiper1 {
+        height: 4.7rem;
     }
 }
 @media (max-width: 440px) {
@@ -383,6 +395,9 @@
     /* ---------------- */
     /* Contact section */
     /* ---------------- */
+    .contact {
+        padding: 90px 0 130px 0;
+    }
     .contact-star{
         width: 40px;
     }
@@ -391,6 +406,15 @@
     }
     .swiper2 {
         width: 200px;
+    }
+    .interested {
+        margin-bottom: 40px;
+    }
+    /* ---------------- */
+    /* Word Animation */
+    /* ---------------- */
+    .swiper1 {
+        height: 4.2rem;
     }
 }
 @media (min-width: 440px) {
