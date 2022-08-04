@@ -251,6 +251,28 @@
     .swiper2 {
         width: 325px;
     }
+    /* ---------------- */
+    /* Footer */
+    /* ---------------- */
+    .footer-content {
+        align-items: flex-end;
+    }
+    .social-links svg {
+        margin-left: 10px;
+        width: 18px;
+        height: 18px;
+    }
+    .footer-content p {
+        width: 30%;
+    }
+    .social-links {
+        width: 70%;
+        justify-content: right;
+    }
+    .myName {
+        display: block;
+        width: 200px;
+    }
 }
 @media (max-width: 565px) {
     :root {
@@ -327,6 +349,12 @@
     }
     .swiper2 {
         width: 225px;
+    }
+    /* ---------------- */
+    /* Footer */
+    /* ---------------- */
+    .footer-content {
+        padding: 38px 35px 50px 35px;
     }
 }
 @media (max-width: 440px) {
@@ -471,6 +499,13 @@
     }
     .swiper2 {
         width: 170px;
+    }
+    /* ---------------- */
+    /* Footer  */
+    /* ---------------- */
+    .social-links svg {
+        width: 14px;
+        height: 14px;
     }
 }
 @media (min-width: 440px) {
