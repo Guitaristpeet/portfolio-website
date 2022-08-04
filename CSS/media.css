@@ -396,7 +396,7 @@
     /* Contact section */
     /* ---------------- */
     .contact {
-        padding: 90px 0 130px 0;
+        padding: 90px 0 170px 0;
     }
     .contact-star{
         width: 40px;
@@ -407,8 +407,14 @@
     .swiper2 {
         width: 200px;
     }
-    .interested {
-        margin-bottom: 40px;
+    .interested, .questions {
+        margin-bottom: 20px;
+    }
+    .contact-heading p {
+        margin-bottom: 20px;
+    }
+    .email-btn {
+        margin-bottom: 20px;
     }
     /* ---------------- */
     /* Word Animation */
