@@ -2,6 +2,12 @@
     .intro-line2 p {
         margin-left: 3%;
     }
+    /* .swiper1 {
+        width: 100%;
+    }
+    .interested {
+        width: 100vw;
+    } */
 }
 @media (max-width: 860px) {
     /* ---------------- */
@@ -10,7 +16,7 @@
     :root {
         --fs-h1: clamp(1rem, 24.5vw + 1rem, 21.8rem);
         --fs-h2: clamp(1rem, 16.69vw + 8rem, 22rem);
-        --fs-h3: clamp(4.1rem, 5vw + 4rem, 7.6rem);
+        --fs-h3: clamp(4.1rem, 5vw + 3.1rem, 7.6rem);
         --fs-p: clamp(0.1rem, 0.7vw + 1rem, 1.6rem);
         --fs1-2: 1.2rem;
         --fs1-3: 1.4rem;
@@ -123,6 +129,10 @@
     :root {
         --fs-h1: clamp(1rem, 23.2vw + 0.8rem, 18rem);
         --fs-h2: clamp(1rem, 15.69vw + 7rem, 19rem);
+        --fs-h3: clamp(1rem, 4vw + 2.7rem, 6rem);
+    }
+    h3 {
+        line-height: 60px;
     }
     .intro-line2 p {
         width: 42rem;
@@ -195,7 +205,10 @@
     :root {
         --fs-h1: clamp(1rem, 21.4vw + 0.8rem, 14rem);
         --fs-h2: clamp(1rem, 13.69vw + 5rem, 15rem);
-        --fs-h3: clamp(1rem, 6vw + 3rem, 6.6rem);
+        --fs-h3: clamp(1rem, 4vw + 2.3rem, 5rem)
+    }
+    h3 {
+        line-height: 45px;
     }
     .nav-links {
         display: none;
@@ -271,6 +284,9 @@
         --fs2-5: 1rem;
         --fs3: 1rem;
         --fs-btn: 0.9rem;
+    }
+    h3 {
+        line-height: 40px;
     }
     /* ---------------- */
     /* Intro */

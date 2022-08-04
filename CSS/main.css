@@ -444,6 +444,9 @@ footer p, .myName {
     display: block;
     overflow: hidden;
 }
+.contact .container {
+    padding: 0;
+}
 /* ---------------- */
 /* Button */
 /* ---------------- */
@@ -608,7 +611,7 @@ footer p, .myName {
 .swiper2 {
     width: 440px;
 }
-.swiper0slide {
+.swiper-slide {
     height: 23px
 }
 h4 {
