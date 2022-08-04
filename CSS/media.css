@@ -2,12 +2,6 @@
     .intro-line2 p {
         margin-left: 3%;
     }
-    /* .swiper1 {
-        width: 100%;
-    }
-    .interested {
-        width: 100vw;
-    } */
 }
 @media (max-width: 860px) {
     /* ---------------- */
@@ -106,16 +100,11 @@
     }
     .project-info {
         width: 100%;
-        /* display: block; */
         justify-items: left;
         position: absolute;
         bottom: -20px;
         left: 55px;
         margin-bottom: 60px;
-        /* text-align: left; */
-    }
-    .project-desc, .technology {
-        /* display: inline; */
     }
     .project-info p {
         width: fit-content;
@@ -129,12 +118,14 @@
     .contact {
         padding: 120px 0 200px 0;
     }
-    .email-btn {
-        /* line-height: 100%; */
-        /* padding: 1.37em 1.4em; */
-    }
     .swiper2 {
         width: 365px;
+    }
+        .interested, .questions {
+        margin-bottom: 35px;
+    }
+    .contact-heading p, .email-btn {
+        margin-bottom: 30px;
     }
 }
 @media (max-width: 700px) {
@@ -142,6 +133,7 @@
         --fs-h1: clamp(1rem, 23.2vw + 0.8rem, 18rem);
         --fs-h2: clamp(1rem, 15.69vw + 7rem, 19rem);
         --fs-h3: clamp(1rem, 4vw + 2.7rem, 6rem);
+        --fs2-5: 1.3rem;
         --fs-btn: 1.6rem;
     }
     h3 {
@@ -167,29 +159,24 @@
     /* ---------------- */
     @keyframes h2anim-in {
         0% {
-            /* font-weight: 420; */
             font-variation-settings:
                 'wght' 420,
                 'wdth' 32,
                 'GRAD' -40;
         }
-
         70% {
             font-variation-settings:
                 'wght' 460,
                 'wdth' 35,
                 'GRAD' 0;
         }
-
         100% {
-            /* font-weight: 500; */
             font-variation-settings:
                 'wght' 450,
                 'wdth' 34,
                 'GRAD' 0;
         }
     }
-
     @keyframes h2anim-out {
         0% {
             font-variation-settings:
@@ -197,7 +184,6 @@
                 'wdth' 34,
                 'GRAD' 0;
         }
-
         100% {
             font-variation-settings:
                 'wght' 420,
@@ -209,7 +195,6 @@
         animation: h2anim-out 220ms both ease-in;
         transition: all 170ms ease-in;
     }
-
     .project-name:hover {
         animation: h2anim-in 120ms both ease-in-out;
     }
@@ -220,10 +205,8 @@
         height: 5.5rem;
     }
     .email-btn {
-        /* line-height: 210%; */
         padding: 15em 0em;
     }
-
     .swiper2 {
         width: 325px;
     }
@@ -299,10 +282,8 @@
         height: 4.7rem;
     }
     .email-btn {
-        /* line-height: 210%; */
         padding: 9em 0em;
     }
-
     .swiper2 {
         width: 225px;
     }
@@ -424,7 +405,7 @@
     /* Contact section */
     /* ---------------- */
     .contact {
-        padding: 90px 0 170px 0;
+        padding: 100px 0 180px 0;
     }
     .contact-star{
         width: 40px;
@@ -435,13 +416,7 @@
     .swiper2 {
         width: 200px;
     }
-    .interested, .questions {
-        margin-bottom: 20px;
-    }
-    .contact-heading p {
-        margin-bottom: 20px;
-    }
-    .email-btn {
+    .interested, .questions, .contact-heading p, .email-btn {
         margin-bottom: 20px;
     }
     /* ---------------- */
@@ -451,10 +426,8 @@
         height: 4.2rem;
     }
     .email-btn {
-        /* line-height: 210%; */
         padding: 5em 0em;
     }
-
     .swiper2 {
         width: 170px;
     }

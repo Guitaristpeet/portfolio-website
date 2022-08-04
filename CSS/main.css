@@ -41,12 +41,6 @@
     --fs3: 2rem;
     --fs-btn: 2.4rem;
 }
-/* @media (min-width: 1240px) {
-    :root {
-        --fs-h1: 26.8rem;
-        --fs-p: 2rem;
-    }
-} */
 a {
     text-decoration: none;
     color: var(--white);
@@ -109,7 +103,6 @@ h1 {
         'YTAS' 750,
         'YTDE' -203,
         'YTFI' 738;
-    /* font-size: 26.8rem; */
     font-size: var(--fs-h1);
     line-height: 86%;
     letter-spacing: 0.02em;
@@ -130,7 +123,6 @@ h2 {
         'YTDE' -203,
         'YTFI' 738;
     font-weight: 420;
-    /* font-size: 24rem; */
     font-size: var(--fs-h2);
     line-height: 97%;
     letter-spacing: 0.035em;
@@ -149,7 +141,6 @@ h3 {
         'ytde' -203,
         'ytfi' 738,
         'opsz' 78;
-    /* font-size: 8.8rem; */
     font-size: var(--fs-h3);
     line-height: 79px;
     letter-spacing: 0.035em;
@@ -289,7 +280,6 @@ footer p, .myName {
     margin-top: 150px;
     padding: 95px 0 190px 0;
     position: relative;
-    /* background-color: var(--light-black); */
 }
 .intro-line1, .intro-line2 {
     width: 100%;
@@ -298,7 +288,6 @@ footer p, .myName {
     display: grid;
     grid-template-columns: 3fr 1fr;
     align-items: center;
-    /* background-color: var(--white); */
 }
 .intro-line2 p {
     margin-left: -10.7%;
@@ -326,7 +315,6 @@ footer p, .myName {
 /* ---------------- */
 .about {
     padding: 190px 0 280px 0;
-    background-color: var(--light-black);
 }
 .about-icon {
     width: fit-content;
@@ -420,7 +408,6 @@ footer p, .myName {
 /* Contact */
 /* ---------------- */
 .contact {
-    background-color: var(--light-black);
     padding: 115px 0 200px 0;
     text-align: center;
 }
@@ -432,9 +419,6 @@ footer p, .myName {
     justify-content: center;
     align-items: center;
 }
-/* .contact-heading img { */
-    /* margin-bottom: 10px; */
-/* } */
 .contact-heading p {
     margin-top: 10px;
     margin-bottom: 40px;
@@ -457,15 +441,13 @@ footer p, .myName {
     color: var(--white);
     font-variation-settings:
         'wght' 800;
-    /* font-size: var(--fs-btn); */
-    /* line-height: 84%; */
     line-height: 235%;
     letter-spacing: 0.05em;
     border: 1px solid var(--white);
     padding: 18em 0em;
-    /* padding: 1.37em 1.4em; */
     border-radius: 50px;
     margin: 0 auto 55px auto;
+    position: relative;
     cursor: pointer;
     overflow: hidden;
     transition: all 0.2s ease-in-out;
@@ -579,7 +561,7 @@ footer p, .myName {
 /* Click-tocopy animation */
 /* ---------------- */
 .copy-email span {
-    font-size: 1.6rem;
+    font-size: var(--fs2-5);
     position: relative;
     display: inline-block;
 }
@@ -598,7 +580,7 @@ footer p, .myName {
     background-color: var(--blue);
     border-radius: 50px;
     width: 0;
-    z-index: -1;
+    z-index: 1;
     opacity: 0.5;
     transition: all 0.2s ease;
 }
@@ -609,6 +591,9 @@ footer p, .myName {
 .btn:hover {
     border-color: var(--blue);
 }
+.visit-btn::before {
+    z-index: -1;
+}
 /* ---------------- */
 /* Click */
 /* ---------------- */
@@ -616,11 +601,13 @@ footer p, .myName {
     width: 410px;
 }
 .swiper-slide {
-    height: 23px
+    height: 26px
 }
 h4 {
     font-size: var(--fs-btn);
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: fit-content;
 }
 /* ---------------- */

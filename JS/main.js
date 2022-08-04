@@ -165,20 +165,20 @@ gsap.from('.project-line', {
 // --------------------------------
 // Contact Section In-View Animation
 // --------------------------------
-// gsap.from('.contactInView', {
-//     scrollTrigger: {
-//         trigger: '.contactInView',
-//         start: 'top 80%',
-//         end: 'bottom 0%',
-//         // markers: true,
-//         toggleActions: 'play none none reverse',
-//     },
-//     stagger: {
-//         amount: 0.8
-//     },
-//     y: 35,
-//     opacity: 0,
-// });
+gsap.from('.contactInView', {
+    scrollTrigger: {
+        trigger: '.contactInView',
+        start: 'top 80%',
+        end: 'bottom 0%',
+        // markers: true,
+        toggleActions: 'play none none reverse',
+    },
+    stagger: {
+        amount: 0.8
+    },
+    y: 35,
+    opacity: 0,
+});
 // --------------------------------
 // Star Animation
 // --------------------------------
@@ -214,21 +214,21 @@ gsap.to('.arrow-down', {
 // --------------------------------
 // Alter BG Color
 // --------------------------------
-// const sections = gsap.utils.toArray('.section');
-// sections.forEach((section, i) => {
-//     var colorAttr = section.getAttribute('data-color');
+const sections = gsap.utils.toArray('.section');
+sections.forEach((section, i) => {
+    var colorAttr = section.getAttribute('data-color');
 
-//     gsap.to('.body', {
-//         backgroundColor: colorAttr,
-//         immediateRender: false,
-//         scrollTrigger: {
-//             trigger: section,
-//             scrub: true,
-//             start: '20% bottom',
-//             end: '+=100%'
-//         }
-//     })
-// });
+    gsap.to('.body', {
+        backgroundColor: colorAttr,
+        immediateRender: false,
+        scrollTrigger: {
+            trigger: section,
+            scrub: true,
+            start: '20% bottom',
+            end: '+=100%'
+        }
+    })
+});
 // --------------------------------
 // Button Functionalities
 // --------------------------------
