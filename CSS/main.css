@@ -430,11 +430,13 @@ footer p, .myName {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
-.contact-heading img {
-    margin-bottom: 10px;
-}
+/* .contact-heading img { */
+    /* margin-bottom: 10px; */
+/* } */
 .contact-heading p {
+    margin-top: 10px;
     margin-bottom: 40px;
 }
 .interested, .questions {

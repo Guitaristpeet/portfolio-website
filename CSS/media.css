@@ -120,10 +120,12 @@
     .project-info p {
         width: fit-content;
     }
-    /* .technology {
-        display: block;
-
-    } */
+    /* ---------------- */
+    /* Contact section */
+    /* ---------------- */
+    .contact-star {
+        width: 60px;
+    }
 }
 @media (max-width: 700px) {
     :root {
@@ -378,7 +380,12 @@
         display: inline;
         margin: 0;
     }
-
+    /* ---------------- */
+    /* Contact section */
+    /* ---------------- */
+    .contact-star{
+        width: 40px;
+    }
     .btn {
         padding: 0;
     }
