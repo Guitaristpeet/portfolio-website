@@ -127,6 +127,47 @@
     .contact-heading p, .email-btn {
         margin-bottom: 30px;
     }
+    /* ---------------- */
+    /* Hover Project-name */
+    /* ---------------- */
+    @keyframes h2anim-in {
+        0% {
+            font-variation-settings:
+                'wght' 420,
+                'wdth' 32,
+                'GRAD' -40;
+        }
+
+        70% {
+            font-variation-settings:
+                'wght' 470,
+                'wdth' 35,
+                'GRAD' 0;
+        }
+
+        100% {
+            font-variation-settings:
+                'wght' 460,
+                'wdth' 34.5,
+                'GRAD' 0;
+        }
+    }
+
+    @keyframes h2anim-out {
+        0% {
+            font-variation-settings:
+                'wght' 450,
+                'wdth' 34,
+                'GRAD' 0;
+        }
+
+        100% {
+            font-variation-settings:
+                'wght' 420,
+                'wdth' 32,
+                'GRAD' -40;
+        }
+    }
 }
 @media (max-width: 700px) {
     :root {
