@@ -289,6 +289,9 @@
     .nav-links {
         display: none;
     }
+    .intro-line1 {
+        width: 90%;
+    }
     .intro-line2 p {
         width: 34rem;
     }

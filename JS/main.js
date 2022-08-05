@@ -48,7 +48,115 @@ ScrollTrigger.create({
     },
 });
 document.addEventListener('DOMContentLoaded', () => {
+    const headerLine = document.querySelector('.header-line');
+    const logo = document.querySelector('.logo');
+    // const linkAbout = document.querySelector('.link-to-about')
+    // const linkProjects = document.querySelector('.link-to-projects')
+    // const linkContact = document.querySelector('.link-to-contact')
+    const introText1 = document.querySelector('.line1-slide');
+    const introText2 = document.querySelector('.line2-slide');
+    const introP = document.querySelector('.intro-p');
+    const scrollArrow = document.querySelector('.scroll');
+    
+    // --------------------------------
+    // Change Intro Text
+    // --------------------------------
+    let width = window.innerWidth;
+    console.log(width);
+    if (width <= 490) {
+        introText2.innerText = 'Developer';
+    } else {
+        introText2.innerText = 'Web Developer';
+    }
+
     swiper1.autoplay.stop();
+
+
+
+
+    const tl = gsap.timeline();
+
+    tl.add(() => {
+        document.body.style.overflow = 'hidden';
+    });
+    tl.fromTo(headerLine, 1, {
+        scaleX: '0%',
+        x: '-50%',
+        opacity: 0.5
+    }, {
+        scaleX: '100%',
+        x: '0%',
+        opacity: 1,
+        ease: 'Power2.easeInOut'
+    })
+    tl.fromTo(logo, 0.5, {
+        opacity: 0,
+        y: '-50%'
+    }, {
+        opacity: 1,
+        y: '0%',
+        ease: 'Power2.easeInOut'
+    }, '-=0.6')
+    tl.fromTo(linkAbout, 0.5, {
+        opacity: 0,
+        y: '-50%'
+    }, {
+        opacity: 1,
+        y: '0%',
+        ease: 'Power2.easeInOut'
+    }, '-=0.4')
+    tl.fromTo(linkProjects, 0.5, {
+        opacity: 0,
+        y: '-50%'
+    }, {
+        opacity: 1,
+        y: '0%',
+        ease: 'Power2.easeInOut'
+    }, '-=0.4')
+    tl.fromTo(linkContact, 0.5, {
+        opacity: 0,
+        y: '-50%'
+    }, {
+        opacity: 1,
+        y: '0%',
+        ease: 'Power2.easeInOut'
+    }, '-=0.4')
+    tl.fromTo(introText1, 1, {
+        x: '10%',
+        opacity: 0,
+    }, {
+        x: '0%',
+        opacity: 1,
+        ease: 'Power2.easeInOut'
+    }, '-=0.4')    
+    tl.fromTo(introText2, 1, {
+        x: '-10%',
+        opacity: 0,
+    }, {
+        x: '0%',
+        opacity: 1,
+        ease: 'Power2.easeInOut'
+    }, '-=1')
+    tl.fromTo(introP, 0.5, {
+        y: '15%',
+        opacity: 0
+    }, {
+        y: '0%',
+        opacity: 1,
+        ease: 'Power2.easeInOut'
+    }, '-=0.7')
+    tl.fromTo(scrollArrow, 0.7, {
+        y: '-15%',
+        opacity: 0
+    }, {
+        y: '0%',
+        opacity: 1,
+        ease: 'Power2.easeInOut'
+    }, '-=0.7');
+    tl.add(() => {
+        document.body.style.overflow = 'visible';
+    });
+
 });
 // --------------------------------
 // Projects Data and Functionality
@@ -86,34 +194,34 @@ projectsContainer.appendChild(lineDiv);
 // --------------------------------
 // Intro 
 // --------------------------------
-// gsap.to('.line1-slide', {
-//     scrollTrigger: {
-//         trigger: '.line1-slide',
-//         start: '2% 23%',
-//         // markers: true,
-//         scrub: 0.5
-//     },
-//     x: 300
-// });
-// gsap.to('.line2-slide', {
-//     scrollTrigger: {
-//         trigger: '.line2-slide',
-//         start: '-105% 23%',
-//         // markers: true,
-//         scrub: 0.5
-//     },
-//     x: -300
-// });
-// gsap.to('.intro-p', {
-//     scrollTrigger: {
-//         trigger: '.intro-p',
-//         scrub: 0.7,
-//         // markers: true,
-//         start: 'top center'
-//     },
-//     y: 300,
-//     opacity: 0,
-// });
+gsap.to('.line1-slide', {
+    scrollTrigger: {
+        trigger: '.line1-slide',
+        start: '2% 23%',
+        // markers: true,
+        scrub: 0.5
+    },
+    x: 300
+});
+gsap.to('.line2-slide', {
+    scrollTrigger: {
+        trigger: '.line2-slide',
+        start: '-105% 23%',
+        // markers: true,
+        scrub: 0.5
+    },
+    x: -300
+});
+gsap.to('.intro-p', {
+    scrollTrigger: {
+        trigger: '.intro-p',
+        scrub: 0.7,
+        // markers: true,
+        start: 'top center'
+    },
+    y: 300,
+    opacity: 0,
+});
 // --------------------------------
 // About Section In-View Animation
 // --------------------------------
@@ -276,15 +384,4 @@ emailBtn.addEventListener('mouseout', () => {
         swiper2.slidePrev();
     }, 500);
 });
-// --------------------------------
-// Change Intro Text
-// --------------------------------
-const introText = document.querySelector('.line2-slide');
-window.addEventListener('resize', (event) => {
-    let width = event.currentTarget.innerWidth;
-    if (width <= 490) {
-        introText.innerText = 'Developer';
-    } else {
-        introText.innerText = 'Web Developer';
-    }
-});
+
