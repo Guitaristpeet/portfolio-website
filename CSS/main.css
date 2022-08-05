@@ -3,14 +3,21 @@
 /* ---------------- */
 @font-face {
     font-family: 'Roboto Flex';
-    src: url(/ASSETS/FONTS/Roboto_Flex/RobotoFlex[GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght].ttf) format('ttf-variations');
+    src: url(/ASSETS/FONTS/Roboto_Flex/RobotoFlex-VariableFont_GRAD\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf) format('ttf');
     font-style: normal;
-    font-size: 1.6rem;
+    font-weight: 400 1000;
 }
+/* @font-face {
+    font-family: 'Roboto Flex';
+    src: url(/ASSETS/FONTS/Roboto_Flex/RobotoFlex[GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght].ttf) format('ttf');
+    font-style: normal;
+    font-weight: 400 1000;
+} */
 @font-face {
     font-family: 'Space Grotesk';
     src: url(/ASSETS/FONTS/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf) format('woff-variations');
     font-style: normal;
+    font-weight: 1000;
 }
 * {
     margin: 0;
@@ -61,7 +68,6 @@ body {
 /* ---------------- */
 .logo, a, p, .copy-email, .myName {
     font-family: var(--space);
-    /* font-style: normal; */
 }
 .logo, a, .copy-email {
     text-transform: uppercase;
@@ -69,7 +75,6 @@ body {
 h1, h2, h3, h4, .btn {
     font-family: var(--roboto);
     text-transform: uppercase;
-    /* font-style: normal; */
 }
 /* ---------------- */
 /* Fonts Logo*/
@@ -95,8 +100,8 @@ h1, h2, h3, h4, .btn {
 /* ---------------- */
 h1 {
     font-variation-settings: 
-        'wdth' 40, 
-        'wght' 400;
+        'wdth' 40;
+        /* 'wght' 400; */
         /* 'GRAD' 0,
         'slnt' 0, */
         /* 'XTRA' 468, */
@@ -110,9 +115,10 @@ h1 {
     font-size: var(--fs-h1);
     line-height: 86%;
     letter-spacing: 0.02em;
-    font-stretch: 40;
+    font-weight: 400;
     background: transparent;
     color: var(--whtie);
+    /* font-stretch: 40; */
 }
 h2 {
     font-variation-settings:
@@ -130,12 +136,12 @@ h2 {
     font-size: var(--fs-h2);
     line-height: 97%;
     letter-spacing: 0.035em;
-    font-stretch: 32;
+    /* font-stretch: 32; */
 }
 h3 {
     font-variation-settings:
         'wdth' 100,
-        'wght' 1000,
+        'wght' 1000;
         /* 'xtra' 468, */
         /* 'xopq' 96, */
         /* 'yopq' 79, */
@@ -144,11 +150,14 @@ h3 {
         'ytas' 750,
         'ytde' -203,
         'ytfi' 738, */
-        'opsz' 78;
+        /* 'opsz' 78; */
     font-size: var(--fs-h3);
     line-height: 79px;
     letter-spacing: 0.035em;
     text-align: center;
+    /* font-weight: 1000; */
+    /* font-stretch: 100; */
+    font-optical-sizing: auto;
 }
 /* ---------------- */
 /* Fonts Paragraph*/
@@ -412,7 +421,7 @@ footer p, .myName {
 /* Contact */
 /* ---------------- */
 .contact {
-    padding: 115px 0 200px 0;
+    padding: 115px 20px 200px 20px;
     text-align: center;
 }
 .contact-heading {
@@ -485,66 +494,61 @@ footer p, .myName {
 .social-links svg {
     margin-left: 20px;
 }
-/* ---------------- */
-/* Hover nav-links */
-/* ---------------- */
-.underline {
-    display: inline-block;
-    position: relative;
-}
-.underline:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 1px;
-    bottom: -8px;
-    left: -1px;
-    background-color: var(--white);
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-.underline:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-/* ---------------- */
-/* Hover Project-name */
-/* ---------------- */
-@keyframes h2anim-in {
-    0% {
-        /* font-weight: 420; */
-        font-variation-settings:
-            'wght' 420,
-            'wdth' 32,
-            'GRAD' -40;
-        }
-        70%{
-            font-variation-settings:
-                'wght' 513,
-                'wdth' 35.3,
-                'GRAD' 0;
-        }
-        100% {
-            /* font-weight: 500; */
-            font-variation-settings:
-                'wght' 500,
-                'wdth' 35,
-                'GRAD' 0;
-        }
+@media (hover: hover) {
+    /* ---------------- */
+    /* Hover nav-links */
+    /* ---------------- */
+    .underline {
+        display: inline-block;
+        position: relative;
     }
-    @keyframes h2anim-out {
+    .underline:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 1px;
+        bottom: -8px;
+        left: -1px;
+        background-color: var(--white);
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    .underline:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    /* ---------------- */
+    /* Hover Project-name */
+    /* ---------------- */
+    @keyframes h2anim-in {
         0% {
             font-variation-settings:
-            'wght' 500,
-            'wdth' 35,
-            'GRAD' 0;
+                'wght' 420,
+                'wdth' 32;
+            }
+            70%{
+                font-variation-settings:
+                    'wght' 513,
+                    'wdth' 35.3;
+            }
+            100% {
+                font-variation-settings:
+                    'wght' 500,
+                    'wdth' 35;
+            }
         }
-        100% {
-            font-variation-settings:
-            'wght' 420,
-            'wdth' 32,
-            'GRAD' -40;
+        @keyframes h2anim-out {
+            0% {
+                font-variation-settings:
+                'wght' 500,
+                'wdth' 35;
+            }
+            100% {
+                font-variation-settings:
+                'wght' 420,
+                'wdth' 32;
+        }
     }
 }
 .project-name {
@@ -552,8 +556,10 @@ footer p, .myName {
     transition: all 200ms ease-in;
     cursor: pointer;
 }
-.project-name:hover {
-    animation: h2anim-in 150ms both ease-in-out;
+@media (hover: hover) {
+    .project-name:hover {
+        animation: h2anim-in 150ms both ease-in-out;
+    }
 }
 /* ---------------- */
 /* Words-animation slide */
@@ -588,12 +594,23 @@ footer p, .myName {
     opacity: 0.5;
     transition: all 0.2s ease;
 }
-.btn:hover::before {
-    width: 100%;
-    opacity: 1;
-} 
-.btn:hover {
-    border-color: var(--blue);
+@media (hover: hover) {
+    .btn:hover::before {
+        width: 100%;
+        opacity: 1;
+    } 
+    .btn:hover {
+        border-color: var(--blue);
+    }
+}
+@media (hover: none) {
+    .btn:before {
+        width: 100%;
+        opacity: 1;
+    }
+    .btn {
+        border-color: var(--blue);
+    }
 }
 .visit-btn::before {
     z-index: -1;
@@ -620,15 +637,17 @@ h4 {
 .social-links path {
     transition: all 0.2s ease-in-out;
 }
-.social-links li:hover path {
-    fill: var(--lightblue);
-}
 .footer-content a {
     text-transform: capitalize;
     transition: all 0.2s ease-in-out;
 }
-.footer-content a:hover {
-    color: var(--lightblue);
+@media (hover: hover) {
+    .social-links li:hover path {
+        fill: var(--lightblue);
+    }
+    .footer-content a:hover {
+        color: var(--lightblue);
+    }
 }
 /* ---------------- */
 /* Try
