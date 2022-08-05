@@ -494,6 +494,14 @@ footer p, .myName {
 .social-links svg {
     margin-left: 20px;
 }
+@media (hover: none) {
+    .nav-links a {
+        transition: all 0.2s ease;
+    }
+    .nav-links a:active {
+        color: var(--lightblue);
+    }
+}
 @media (hover: hover) {
     /* ---------------- */
     /* Hover nav-links */
@@ -553,8 +561,13 @@ footer p, .myName {
 }
 .project-name {
     animation: h2anim-out 250ms both ease-in;
-    transition: all 200ms ease-in;
+    transition: animation 200ms ease-in;
     cursor: pointer;
+}
+@media (hover: none) {
+    .project-name:active {
+        color: var(--lightblue);
+    }
 }
 @media (hover: hover) {
     .project-name:hover {
@@ -612,6 +625,11 @@ footer p, .myName {
         border-color: var(--blue);
     }
 }
+@media (hover: none) {
+    .btn:active {
+        background-color: var(--lightblue);
+    }
+}
 .visit-btn::before {
     z-index: -1;
 }
@@ -646,6 +664,14 @@ h4 {
         fill: var(--lightblue);
     }
     .footer-content a:hover {
+        color: var(--lightblue);
+    }
+}
+@media (hover: none) {
+    .social-links li:active path {
+        fill: var(--lightblue);
+    }
+    .footer-content a {
         color: var(--lightblue);
     }
 }

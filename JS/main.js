@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
         y: '0%',
         opacity: 1,
         ease: 'Power2.easeInOut'
-    }, '-=0.7');
+    }, '-=0.7')
     tl.add(() => {
         document.body.style.overflow = 'visible';
     });
@@ -197,7 +197,7 @@ projectsContainer.appendChild(lineDiv);
 gsap.to('.line1-slide', {
     scrollTrigger: {
         trigger: '.line1-slide',
-        start: '2% 23%',
+        start: '5% 23%',
         // markers: true,
         scrub: 0.5
     },
@@ -217,9 +217,9 @@ gsap.to('.intro-p', {
         trigger: '.intro-p',
         scrub: 0.7,
         // markers: true,
-        start: 'top center'
+        start: '-20% center'
     },
-    y: 300,
+    y: 200,
     opacity: 0,
 });
 // --------------------------------
