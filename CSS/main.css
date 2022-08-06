@@ -1,15 +1,9 @@
 /* ---------------- */
 /* Global Style */
 /* ---------------- */
-@font-face {
-    font-family: 'Roboto Flex';
-    src: url(/ASSETS/FONTS/Roboto_Flex/RobotoFlex-VariableFont_GRAD\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf) format('ttf');
-    font-style: normal;
-    font-weight: 400 1000;
-}
 /* @font-face {
     font-family: 'Roboto Flex';
-    src: url(/ASSETS/FONTS/Roboto_Flex/RobotoFlex[GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght].ttf) format('ttf');
+    src: url(/ASSETS/FONTS/Roboto_Flex/RobotoFlex-VariableFont_GRAD\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf) format('ttf');
     font-style: normal;
     font-weight: 400 1000;
 } */
