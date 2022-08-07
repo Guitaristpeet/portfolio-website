@@ -1,18 +1,6 @@
 /* ---------------- */
 /* Global Style */
 /* ---------------- */
-/* @font-face {
-    font-family: 'Roboto Flex';
-    src: url(/ASSETS/FONTS/Roboto_Flex/RobotoFlex-VariableFont_GRAD\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf) format('ttf');
-    font-style: normal;
-    font-weight: 400 1000;
-} */
-@font-face {
-    font-family: 'Space Grotesk';
-    src: url(/ASSETS/FONTS/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf) format('woff-variations');
-    font-style: normal;
-    font-weight: 1000;
-}
 * {
     margin: 0;
     padding: 0;
@@ -84,7 +72,7 @@ h1, h2, h3, h4, .btn {
 /* Fonts Navbar*/
 /* ---------------- */
 .nav-links a {
-    font-variation-settings: 'wght' 200;
+    font-weight: 400;
     font-size: var(--fs1-1);
     line-height: 97.5%;
     letter-spacing: 0.2em;
@@ -93,77 +81,41 @@ h1, h2, h3, h4, .btn {
 /* Fonts Heading*/
 /* ---------------- */
 h1 {
-    font-variation-settings: 
-        'wdth' 40;
-        /* 'wght' 400; */
-        /* 'GRAD' 0,
-        'slnt' 0, */
-        /* 'XTRA' 468, */
-        /* 'XOPQ' 96, */
-        /* 'YOPQ' 79, */
-        /* 'YTLC' 514,
-        'YTUC' 712,
-        'YTAS' 750,
-        'YTDE' -203,
-        'YTFI' 738; */
     font-size: var(--fs-h1);
     line-height: 86%;
     letter-spacing: 0.02em;
     font-weight: 400;
+    font-stretch: 40%;
     background: transparent;
     color: var(--whtie);
-    /* font-stretch: 40; */
 }
 h2 {
-    font-variation-settings:
-        'wdth' 32;
-        /* 'GRAD' -40; */
-        /* 'XTRA' 468, */
-        /* 'XOPQ' 96, */
-        /* 'YOPQ' 79, */
-        /* 'YTLC' 514,
-        'YTUC' 712,
-        'YTAS' 750,
-        'YTDE' -203,
-        'YTFI' 738; */
     font-weight: 420;
     font-size: var(--fs-h2);
     line-height: 97%;
     letter-spacing: 0.035em;
-    /* font-stretch: 32; */
+    font-stretch: 32%;
 }
 h3 {
-    font-variation-settings:
-        'wdth' 100,
-        'wght' 1000;
-        /* 'xtra' 468, */
-        /* 'xopq' 96, */
-        /* 'yopq' 79, */
-        /* 'ytlc' 514,
-        'ytuc' 712,
-        'ytas' 750,
-        'ytde' -203,
-        'ytfi' 738, */
-        /* 'opsz' 78; */
     font-size: var(--fs-h3);
     line-height: 79px;
     letter-spacing: 0.035em;
     text-align: center;
-    /* font-weight: 1000; */
-    /* font-stretch: 100; */
+    font-weight: 1000;
+    font-stretch: 100;
     font-optical-sizing: auto;
 }
 /* ---------------- */
 /* Fonts Paragraph*/
 /* ---------------- */
 .intro-line2 p {
-    font-variation-settings: 'wght' 200;
+    font-weight: 400;
     font-size: var(--fs-p);
     line-height: 138%;
     letter-spacing: 0.03em;
 } 
 .about-content, .questions p {
-    font-variation-settings: 'wght' 200;
+    font-weight: 400;
     font-size: var(--fs3);
     line-height: 138%;
     letter-spacing: 0.03em;
@@ -173,7 +125,7 @@ h3 {
 }
 .scroll p {
     font-family: 'Space Grotesk';
-    font-variation-settings: 'wght' 200;
+    font-weight: 400;
     font-size: var(--fs1-2);
     line-height: 138%;
     letter-spacing: 0.03em;
@@ -193,7 +145,7 @@ h3 {
     font-size: var(--fs2-4);
 }
 .about-icon p, .projects-heading p, .project-content p, .contact-heading p {
-    font-variation-settings: 'wght' 340;
+    font-weight: 500;
     line-height: 110%;
     letter-spacing: 0.16em;
 }
@@ -201,7 +153,7 @@ h3 {
     letter-spacing: 0.03em;
 }
 .project-info p {
-    font-variation-settings: 'wght' 340;
+    font-weight: 500;
     line-height: 148%;
     text-align: right;
     letter-spacing: 0.03em;
@@ -220,8 +172,7 @@ h3 {
 /* Fonts Footer*/
 /* ---------------- */
 footer p, .myName {
-    font-variation-settings:
-            'wght' 200;
+    font-weight: 400;
     font-size: var(--fs1-3);
     line-height: 120%;
     letter-spacing: 0.03em;
@@ -446,12 +397,11 @@ footer p, .myName {
 .btn {
     background-color: transparent;
     color: var(--white);
-    font-variation-settings:
-        'wght' 800;
+    font-weight: 800;
     line-height: 235%;
     letter-spacing: 0.05em;
     border: 1px solid var(--white);
-    padding: 18em 0em;
+    padding: 2.8rem 0em;
     border-radius: 50px;
     margin: 0 auto 55px auto;
     position: relative;
