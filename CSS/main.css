@@ -438,7 +438,7 @@ footer p, .myName {
 .social-links svg {
     margin-left: 20px;
 }
-@media (hover: none) {
+@media screen and (hover: none) {
     .nav-links a {
         transition: all 0.2s ease;
     }
@@ -446,7 +446,7 @@ footer p, .myName {
         color: var(--lightblue);
     }
 }
-@media (hover: hover) {
+@media screen and (hover: hover) {
     /* ---------------- */
     /* Hover nav-links */
     /* ---------------- */
@@ -508,12 +508,12 @@ footer p, .myName {
     transition: animation 200ms ease-in;
     cursor: pointer;
 }
-@media (hover: none) {
+@media screen and (hover: none) {
     .project-name:active {
         color: var(--lightblue);
     }
 }
-@media (hover: hover) {
+@media screen and (hover: hover) {
     .project-name:hover {
         animation: h2anim-in 150ms both ease-in-out;
     }
@@ -551,7 +551,7 @@ footer p, .myName {
     opacity: 0.5;
     transition: all 0.2s ease;
 }
-@media (hover: hover) {
+@media screen and (hover: hover) {
     .btn:hover::before {
         width: 100%;
         opacity: 1;
@@ -560,7 +560,7 @@ footer p, .myName {
         border-color: var(--blue);
     }
 }
-@media (hover: none) {
+@media screen and (hover: none) {
     .btn:before {
         width: 100%;
         opacity: 1;
@@ -569,7 +569,7 @@ footer p, .myName {
         border-color: var(--blue);
     }
 }
-@media (hover: none) {
+@media screen and (hover: none) {
     .btn:active {
         background-color: var(--lightblue);
     }
@@ -603,7 +603,7 @@ h4 {
     text-transform: capitalize;
     transition: all 0.2s ease-in-out;
 }
-@media (hover: hover) {
+@media screen and (hover: hover) {
     .social-links li:hover path {
         fill: var(--lightblue);
     }
@@ -611,7 +611,7 @@ h4 {
         color: var(--lightblue);
     }
 }
-@media (hover: none) {
+@media screen and (hover: none) {
     .social-links li:active path {
         fill: var(--lightblue);
     }

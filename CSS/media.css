@@ -3,7 +3,7 @@
         margin-left: 3%;
     }
 }
-@media (max-width: 860px) {
+@media screen and (max-width: 860px) {
     /* ---------------- */
     /* Root */
     /* ---------------- */
@@ -169,7 +169,7 @@
         }
     }
 }
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
     :root {
         --fs-h1: clamp(1rem, 23.2vw + 0.8rem, 18rem);
         --fs-h2: clamp(1rem, 15.69vw + 7rem, 19rem);
@@ -248,7 +248,7 @@
         height: 5.5rem;
     }
     .email-btn {
-        padding: 15em 0em;
+        padding: 2.3rem 0;
     }
     .swiper2 {
         width: 325px;
@@ -276,7 +276,7 @@
         width: 200px;
     }
 }
-@media (max-width: 565px) {
+@media screen and (max-width: 565px) {
     :root {
         --fs-h1: clamp(1rem, 21.4vw + 0.8rem, 14rem);
         --fs-h2: clamp(1rem, 13.69vw + 5rem, 15rem);
@@ -350,7 +350,7 @@
         height: 4.7rem;
     }
     .email-btn {
-        padding: 9em 0em;
+        padding: 1.4rem 0;
     }
     .swiper2 {
         width: 225px;
@@ -362,7 +362,7 @@
         padding: 38px 35px 50px 35px;
     }
 }
-@media (max-width: 440px) {
+@media screen and (max-width: 440px) {
     /* ---------------- */
     /* Root */
     /* ---------------- */
@@ -500,7 +500,7 @@
         height: 4.2rem;
     }
     .email-btn {
-        padding: 5em 0em;
+        padding: 0.75rem 0;
     }
     .swiper2 {
         width: 170px;
@@ -513,12 +513,12 @@
         height: 14px;
     }
 }
-@media (min-width: 440px) {
+@media screen and (min-width: 440px) {
     .visit-btn {
         display: none !important;
     }
 }
-@media (max-width: 370px) {
+@media screen and (max-width: 370px) {
     :root {
         --fs-h1: 10.5rem;
         --fs-h2: 8.2rem;
