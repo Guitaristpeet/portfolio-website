@@ -367,7 +367,7 @@
     /* Root */
     /* ---------------- */
     :root {
-        --fs-h1: 14rem;
+        --fs-h1: clamp(0.5rem, 6vw + 7rem, 10rem);
         --fs-h2: 11.2rem;
         --fs-h3: clamp(0.5rem, 3vw + 2.3rem, 4rem);
         --fs-p: 1.2rem; 
@@ -512,6 +512,9 @@
         width: 14px;
         height: 14px;
     }
+    .footer-content {
+        padding: 18px 35px 24px 35px;
+    }
 }
 @media screen and (min-width: 440px) {
     .visit-btn {
@@ -520,7 +523,7 @@
 }
 @media screen and (max-width: 370px) {
     :root {
-        --fs-h1: 10.5rem;
+        --fs-h1: 8.5rem;
         --fs-h2: 8.2rem;
         --fs-h3: 3rem;
     }

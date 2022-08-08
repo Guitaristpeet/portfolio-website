@@ -61,13 +61,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // --------------------------------
     // Change Intro Text
     // --------------------------------
-    let width = window.innerWidth;
-    console.log(width);
-    if (width <= 490) {
-        introText2.innerText = 'Developer';
-    } else {
-        introText2.innerText = 'Web Developer';
-    }
+    function checkWindowSize (){
+        let width = window.innerWidth;
+        if (width <= 490) {
+            introText2.innerText = 'Developer';
+        } else {
+            introText2.innerText = 'Web Developer';
+        }
+    };
+    checkWindowSize();
+    document.addEventListener('resize', () => {
+        console.log(width);
+        checkWindowSize();
+    })
+
 
     swiper1.autoplay.stop();
 
