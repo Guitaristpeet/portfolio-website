@@ -508,11 +508,6 @@ footer p, .myName {
     transition: animation 200ms ease-in;
     cursor: pointer;
 }
-@media screen and (hover: none) {
-    .project-name:active {
-        color: var(--lightblue);
-    }
-}
 @media screen and (hover: hover) {
     .project-name:hover {
         animation: h2anim-in 150ms both ease-in-out;
