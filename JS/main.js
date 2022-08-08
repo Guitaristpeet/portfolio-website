@@ -57,7 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const introText2 = document.querySelector('.line2-slide');
     const introP = document.querySelector('.intro-p');
     const scrollArrow = document.querySelector('.scroll');
-    
     // --------------------------------
     // Change Intro Text
     // --------------------------------
@@ -70,13 +69,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
     checkWindowSize();
-    document.addEventListener('resize', () => {
-        console.log(width);
+    window.addEventListener('resize', () => {
+        let width = window.innerWidth;
+        // console.log(width);
         checkWindowSize();
     })
-
+    // --------------------------------
+    // Stop Word Animation after DOM loaded
+    // --------------------------------
     swiper1.autoplay.stop();
-
+    // --------------------------------
+    // H1 Animation Timeline
+    // --------------------------------
     const tl = gsap.timeline();
     tl.add(() => {
         document.body.style.overflow = 'hidden';
@@ -158,7 +162,6 @@ document.addEventListener('DOMContentLoaded', () => {
     tl.add(() => {
         document.body.style.overflow = 'visible';
     });
-
 });
 // --------------------------------
 // Projects Data and Functionality
