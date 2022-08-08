@@ -75,14 +75,9 @@ document.addEventListener('DOMContentLoaded', () => {
         checkWindowSize();
     })
 
-
     swiper1.autoplay.stop();
 
-
-
-
     const tl = gsap.timeline();
-
     tl.add(() => {
         document.body.style.overflow = 'hidden';
     });
@@ -197,14 +192,13 @@ projectsContainer.appendChild(lineDiv);
 // --------------------------------
 // GSAP
 // --------------------------------
-
 // --------------------------------
 // Intro 
 // --------------------------------
 gsap.to('.line1-slide', {
     scrollTrigger: {
         trigger: '.line1-slide',
-        start: '5% 23%',
+        start: '5% 20%',
         // markers: true,
         scrub: 0.5
     },
