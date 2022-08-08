@@ -229,7 +229,7 @@ gsap.to('.intro-p', {
 gsap.from('.aboutInView', {
     scrollTrigger: {
         trigger: '.aboutInView',
-        start: 'top 85%',
+        start: 'top 75%',
         end: 'bottom 0%',
         // markers: true,
         toggleActions: 'play complete none reverse',
