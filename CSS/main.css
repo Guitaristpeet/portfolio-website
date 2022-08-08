@@ -239,6 +239,7 @@ footer p, .myName {
     margin-top: 150px;
     padding: 95px 0 190px 0;
     position: relative;
+    overflow: hidden;
 }
 .intro-line1, .intro-line2 {
     width: 100%;

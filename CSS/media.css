@@ -268,11 +268,11 @@
         height: 18px;
     }
     .footer-content p {
-        width: 30%;
+        width: 40%;
     }
     .social-links {
-        width: 70%;
-        justify-content: right;
+        width: 50%;
+        justify-items: right;
     }
     .myName {
         display: block;
