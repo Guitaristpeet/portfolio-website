@@ -186,6 +186,7 @@ footer p, .myName {
     left: 0;
     width: 100%;
     background: #1212124e;
+    -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
     z-index: 5;
 }
@@ -401,7 +402,7 @@ footer p, .myName {
     line-height: 235%;
     letter-spacing: 0.05em;
     border: 1px solid var(--white);
-    padding: 2.8rem 0em;
+    padding: 2.8rem 2.3rem;
     border-radius: 50px;
     margin: 0 auto 55px auto;
     position: relative;
