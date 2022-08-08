@@ -275,7 +275,7 @@
         width: 40%;
     }
     .social-links {
-        width: 50%;
+        width: fit-content;
         justify-items: right;
     }
     .myName {
@@ -492,7 +492,7 @@
     .contact {
         padding: 100px 0 180px 0;
     }
-    .contact-star{
+    .contact-star {
         width: 40px;
     }
     .btn {
@@ -526,6 +526,13 @@
     }
     .footer-content {
         padding: 18px 35px 24px 35px;
+    }
+    .footer-content p {
+        width: 100%;
+    }
+    .social-links {
+        width: fit-content;
+        justify-items: right;
     }
 }
 @media screen and (min-width: 440px) {
