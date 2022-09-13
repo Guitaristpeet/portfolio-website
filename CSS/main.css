@@ -279,7 +279,7 @@ footer p,
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   right: 0;
   transform: translate(-29%, -25%);
 }
