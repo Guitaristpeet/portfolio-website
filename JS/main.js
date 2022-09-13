@@ -37,7 +37,6 @@ ScrollTrigger.create({
     trigger: '.interested',
     start: 'top 80%',
     end: 'bottom 80%',
-    // markers: true,
     onEnter: () => {
         setTimeout(() => {
             swiper1.autoplay.start();
@@ -50,9 +49,6 @@ ScrollTrigger.create({
 document.addEventListener('DOMContentLoaded', () => {
     const headerLine = document.querySelector('.header-line');
     const logo = document.querySelector('.logo');
-    // const linkAbout = document.querySelector('.link-to-about')
-    // const linkProjects = document.querySelector('.link-to-projects')
-    // const linkContact = document.querySelector('.link-to-contact')
     const introText1 = document.querySelector('.line1-slide');
     const introText2 = document.querySelector('.line2-slide');
     const introP = document.querySelector('.intro-p');
@@ -71,7 +67,6 @@ document.addEventListener('DOMContentLoaded', () => {
     checkWindowSize();
     window.addEventListener('resize', () => {
         let width = window.innerWidth;
-        // console.log(width);
         checkWindowSize();
     })
     // --------------------------------
@@ -202,7 +197,6 @@ gsap.to('.line1-slide', {
     scrollTrigger: {
         trigger: '.line1-slide',
         start: '5% 20%',
-        // markers: true,
         scrub: 0.5
     },
     x: 300
@@ -211,7 +205,6 @@ gsap.to('.line2-slide', {
     scrollTrigger: {
         trigger: '.line2-slide',
         start: '-105% 23%',
-        // markers: true,
         scrub: 0.5
     },
     x: -300
@@ -220,7 +213,6 @@ gsap.to('.intro-p', {
     scrollTrigger: {
         trigger: '.intro-p',
         scrub: 0.7,
-        // markers: true,
         start: '-20% center'
     },
     y: 200,
@@ -234,7 +226,6 @@ gsap.from('.aboutInView', {
         trigger: '.aboutInView',
         start: 'top 75%',
         end: 'bottom 0%',
-        // markers: true,
         toggleActions: 'play complete none reverse',
     },
     stagger: {
@@ -251,7 +242,6 @@ gsap.from('.projInView', {
         trigger: '.projInView',
         start: 'top 80%',
         end: 'bottom 0%',
-        // markers: true,
         toggleActions: 'play none none reverse',
     },
     stagger: {
@@ -265,7 +255,6 @@ gsap.from('.project-line', {
         trigger: '.projInView',
         start: 'top 80%',
         end: 'bottom 0%',
-        // markers: true,
         toggleActions: 'play none none reverse',
     },
     stagger: {
@@ -282,7 +271,6 @@ gsap.from('.contactInView', {
         trigger: '.contactInView',
         start: 'top 80%',
         end: 'bottom 0%',
-        // markers: true,
         toggleActions: 'play none none reverse',
     },
     stagger: {
