@@ -362,6 +362,7 @@ footer p,
 }
 .technology {
   width: 100%;
+  text-transform: uppercase;
 }
 .project {
   width: calc(100vw - 140px);
