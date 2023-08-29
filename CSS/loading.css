@@ -1,0 +1,36 @@
+.loading-container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  background-color: var(--black);
+
+  transition: all 0.2s ease;
+}
+.loading-container p,
+.loading-container img {
+  grid-area: 1/1;
+}
+.loading-container p {
+  font-size: var(--fs1-1);
+  text-transform: capitalize;
+  z-index: 2;
+}
+.loading-star {
+  color: var(--gray);
+  animation: spin 2s ease infinite;
+  animation-play-state: running;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
