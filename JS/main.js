@@ -30,15 +30,15 @@ linkContact.addEventListener("click", () =>
 // --------------------------------
 const swiperWrapper1 = document.querySelector(".swiper-wrapper1");
 const words = [
-  "web development",
-  "innovation",
+  "web dev",
   "design",
+  "frontend",
+  "innovation",
   "technology",
+  "backend",
+  "application",
+  "programming",
   "animation",
-  "game design",
-  "audio innovation",
-  "3d",
-  "ambisonic mix",
 ];
 
 let allWords = words
