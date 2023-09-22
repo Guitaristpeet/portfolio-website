@@ -241,6 +241,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // Projects Data and Functionality
 // --------------------------------
 const projectsContainer = document.querySelector(".projContainer");
+projects.reverse();
 let allProject = projects.map((project, index) => {
   const div = document.createElement("div");
   div.classList.add("project");
