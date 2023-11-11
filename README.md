@@ -1,17 +1,19 @@
-SUTHEEDEV.COM
+# SutheeDev.com
+
+![SutheeDev Landing Page](https://res.cloudinary.com/dnc7potxo/image/upload/v1699723871/ReadMe-Images/Portfolio%20Site/Portfolio_Landing_lvwxth.png)
 
 ## General Info
 
-[@SutheeDev.com](https://www.sutheedev.com/) is my very first front-End Developer portfolio website, where I developed and built a single-page responsive site using HTML, CSS, and JavaScript. I also implemented a couple of JS libraries such as GSAP, Swiper.js, and Anime.js to create smooth and interactive transitions and animations.
+[SutheeDev.com](https://www.sutheedev.com/) is my very first front-End Developer portfolio website, where I developed and built a single-page responsive site using HTML, CSS, and JavaScript. I also implemented a couple of JS libraries to create smooth and interactive transitions and animations.
 
 ## Technologies
 
-- HTML5
-- CSS3
+- HTML
+- CSS
 - JavaScript ES6
 - GSAP
-- Swiper.js
+- SwiperJS
 
 ## Contact
 
-I'm looking for an opportunity to work as a front-end developer. If you're interested in collaborating with me, please feel free to contact me [@SutheeDev](https://github.com/SutheeDev).
+I'm looking for an opportunity to work as a front-end developer. If you have any suggestions or would like to collaborate, please get in touch with me on GitHub. Thanks!
