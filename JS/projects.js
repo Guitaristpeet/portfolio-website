@@ -19,6 +19,15 @@ const projects = [
   },
   {
     id: 3,
+    name: "TodayTask",
+    desc: "To-do-list",
+    info: "",
+    technologies: "react | typescript | vitejs",
+    img: "",
+    url: "https://su-t-today-task.netlify.app/",
+  },
+  {
+    id: 4,
     name: "poveda",
     desc: "Travel Agency",
     info: "",
@@ -27,7 +36,7 @@ const projects = [
     url: "https://poveda-su-t.netlify.app/",
   },
   {
-    id: 4,
+    id: 5,
     name: "bloc camp",
     desc: "Venue Application",
     info: "",
