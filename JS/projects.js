@@ -33,7 +33,7 @@ const projects = [
     info: "",
     technologies: "react | style-components",
     img: "",
-    url: "https://poveda-su-t.netlify.app/",
+    url: "https://poveda.onrender.com/",
   },
   {
     id: 5,
