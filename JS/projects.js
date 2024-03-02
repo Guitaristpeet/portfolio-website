@@ -28,6 +28,15 @@ const projects = [
   },
   {
     id: 4,
+    name: "Good Times",
+    desc: "Design Conference",
+    info: "",
+    technologies: "html | css | js",
+    img: "",
+    url: "https://good-times.netlify.app/",
+  },
+  {
+    id: 5,
     name: "valla table",
     desc: "Thai Cuisine Elevated",
     info: "",
@@ -36,7 +45,7 @@ const projects = [
     url: "https://valla-table-su-t.netlify.app/",
   },
   {
-    id: 5,
+    id: 6,
     name: "TodayTask",
     desc: "To-do-list",
     info: "",
@@ -45,7 +54,7 @@ const projects = [
     url: "https://su-t-today-task.netlify.app/",
   },
   {
-    id: 6,
+    id: 7,
     name: "poveda",
     desc: "Travel Agency",
     info: "",
@@ -54,7 +63,7 @@ const projects = [
     url: "https://poveda.onrender.com/",
   },
   {
-    id: 7,
+    id: 8,
     name: "bloc camp",
     desc: "Venue Application",
     info: "",
