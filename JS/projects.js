@@ -1,6 +1,24 @@
 const projects = [
   {
     id: 1,
+    name: "Real&True",
+    desc: "Artist Portfolio",
+    info: "",
+    technologies: "html | css | js",
+    img: "",
+    url: "https://real-true-su-t.netlify.app/",
+  },
+  {
+    id: 2,
+    name: "Stornoway",
+    desc: "Architect Firm",
+    info: "",
+    technologies: "html | css | js",
+    img: "",
+    url: "https://stornoway-su-t.netlify.app/",
+  },
+  {
+    id: 3,
     name: "Jiffy",
     desc: "Meme Generator",
     info: "",
@@ -9,7 +27,7 @@ const projects = [
     url: "https://sutheedev-jiffy.netlify.app/",
   },
   {
-    id: 2,
+    id: 4,
     name: "valla table",
     desc: "Thai Cuisine Elevated",
     info: "",
@@ -18,7 +36,7 @@ const projects = [
     url: "https://valla-table-su-t.netlify.app/",
   },
   {
-    id: 3,
+    id: 5,
     name: "TodayTask",
     desc: "To-do-list",
     info: "",
@@ -27,7 +45,7 @@ const projects = [
     url: "https://su-t-today-task.netlify.app/",
   },
   {
-    id: 4,
+    id: 6,
     name: "poveda",
     desc: "Travel Agency",
     info: "",
@@ -36,7 +54,7 @@ const projects = [
     url: "https://poveda.onrender.com/",
   },
   {
-    id: 5,
+    id: 7,
     name: "bloc camp",
     desc: "Venue Application",
     info: "",
