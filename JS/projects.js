@@ -75,7 +75,7 @@ const projects = [
     name: "SnailMail",
     desc: "Typing Test",
     technologies: "JavaScript",
-    url: "https://su-t-mastermind-game.netlify.app/",
+    url: "https://perscholas-sba316.netlify.app/",
   },
   {
     id: 12,
