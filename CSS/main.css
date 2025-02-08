@@ -124,6 +124,7 @@ h3 {
   font-size: var(--fs-p);
   line-height: 138%;
   letter-spacing: 0.03em;
+  max-width: 300px;
 }
 .about-content,
 .questions p {
@@ -136,6 +137,9 @@ h3 {
 .intro-line2 h1 {
   word-spacing: 0.5vw;
 }
+/* .intro-p {
+  max-width: 300px;
+} */
 .scroll p {
   font-family: "Space Grotesk";
   font-weight: 400;
@@ -269,7 +273,7 @@ footer p,
   align-items: center;
 }
 .intro-line2 p {
-  margin-left: -10.7%;
+  margin-left: -19.7%;
 }
 .scroll {
   width: fit-content;

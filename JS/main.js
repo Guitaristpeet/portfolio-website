@@ -1,4 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
+
 // --------------------------------
 // Hide the loading-container when the page is done loading
 // --------------------------------
@@ -7,6 +8,7 @@ window.addEventListener("load", () => {
   loadingContainer.style.opacity = "0";
   loadingContainer.style.zIndex = "0";
 });
+
 // --------------------------------
 // Scroll To
 // --------------------------------
@@ -25,20 +27,22 @@ linkProjects.addEventListener("click", () =>
 linkContact.addEventListener("click", () =>
   contactSection.scrollIntoView({ behavior: "smooth" })
 );
+
 // --------------------------------
 // Words Animation Data
 // --------------------------------
 const swiperWrapper1 = document.querySelector(".swiper-wrapper1");
 const words = [
   "web dev",
-  "design",
+  "3D development",
   "frontend",
-  "innovation",
-  "technology",
-  "backend",
-  "application",
-  "programming",
   "animation",
+  "innovation",
+  "UI/UX",
+  "creative coding",
+  "design",
+  "backend",
+  "technology",
 ];
 
 let allWords = words
@@ -47,6 +51,7 @@ let allWords = words
   })
   .join("");
 swiperWrapper1.innerHTML = allWords;
+
 // --------------------------------
 // Words Animation Functionality
 // --------------------------------
@@ -72,40 +77,64 @@ ScrollTrigger.create({
     swiper1.autoplay.stop();
   },
 });
+
 document.addEventListener("DOMContentLoaded", () => {
   const headerLine = document.querySelector(".header-line");
   const logo = document.querySelector(".logo");
   const introText1 = document.querySelector(".line1-slide");
   const introText2 = document.querySelector(".line2-slide");
+  const introTextMid = document.querySelector(".lineMid-slide");
   const introP = document.querySelector(".intro-p");
   const scrollArrow = document.querySelector(".scroll");
+  let width = window.innerWidth;
+
+  function populateText(width) {
+    if (width <= 888) {
+      introText1.innerText = "Creative";
+      introTextMid.innerText = "Full-Stack";
+      introText2.innerText = "App Engineer";
+    } else {
+      introText1.innerText = "Creative Full-Stack";
+      introTextMid.innerText = "";
+      introText2.innerText = "App Engineer";
+    }
+  }
+  populateText(width);
+
   // --------------------------------
   // Change Intro Text
   // --------------------------------
-  function checkWindowSize() {
-    let width = window.innerWidth;
-    if (width <= 490) {
-      introText2.innerText = "Developer";
-    } else {
-      introText2.innerText = "Web Developer";
+  function changeHeadlineText(width) {
+    if (width > 888) {
+      introText1.innerText = "Creative Full-Stack";
+      introTextMid.innerText = "";
+      introText2.innerText = "App Engineer";
+    } else if (width > 490) {
+      introText1.innerText = "Creative";
+      introTextMid.innerText = "Full-Stack";
+      introText2.innerText = "App Engineer";
     }
   }
-  checkWindowSize();
+  // Listen to resize and change headline text;
   window.addEventListener("resize", () => {
-    let width = window.innerWidth;
-    checkWindowSize();
+    width = window.innerWidth;
+    changeHeadlineText(width);
   });
+
   // --------------------------------
   // Stop Word Animation after DOM loaded
   // --------------------------------
   swiper1.autoplay.stop();
+
   // --------------------------------
   // H1 Animation Timeline
   // --------------------------------
   const tl = gsap.timeline();
+
   tl.add(() => {
     document.body.style.overflow = "hidden";
   });
+
   tl.fromTo(
     headerLine,
     1,
@@ -121,6 +150,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ease: "Power2.easeInOut",
     }
   );
+
   tl.fromTo(
     logo,
     0.5,
@@ -135,6 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     "-=0.6"
   );
+
   tl.fromTo(
     linkAbout,
     0.5,
@@ -149,6 +180,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     "-=0.4"
   );
+
   tl.fromTo(
     linkProjects,
     0.5,
@@ -163,6 +195,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     "-=0.4"
   );
+
   tl.fromTo(
     linkContact,
     0.5,
@@ -177,8 +210,9 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     "-=0.4"
   );
+
   tl.fromTo(
-    introText1,
+    [introText1, introTextMid],
     1,
     {
       x: "10%",
@@ -191,6 +225,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     "-=0.4"
   );
+
   tl.fromTo(
     introText2,
     1,
@@ -205,6 +240,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     "-=1"
   );
+
   tl.fromTo(
     introP,
     0.5,
@@ -219,6 +255,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     "-=0.7"
   );
+
   tl.fromTo(
     scrollArrow,
     0.7,
@@ -233,10 +270,12 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     "-=0.7"
   );
+
   tl.add(() => {
     document.body.style.overflow = "visible";
   });
 });
+
 // --------------------------------
 // Projects Data and Functionality
 // --------------------------------
@@ -267,13 +306,14 @@ let allProject = projects.map((project, index) => {
 const lineDiv = document.createElement("div");
 lineDiv.classList.add("line", "project-line-last");
 projectsContainer.appendChild(lineDiv);
+
 // --------------------------------
 // GSAP
 // --------------------------------
 // --------------------------------
 // Intro
 // --------------------------------
-gsap.to(".line1-slide", {
+gsap.to([".line1-slide", ".lineMid-slide"], {
   scrollTrigger: {
     trigger: ".line1-slide",
     start: "5% 20%",
@@ -289,15 +329,16 @@ gsap.to(".line2-slide", {
   },
   x: -300,
 });
-gsap.to(".intro-p", {
-  scrollTrigger: {
-    trigger: ".intro-p",
-    scrub: 0.7,
-    start: "-20% center",
-  },
-  y: 200,
-  opacity: 0,
-});
+// gsap.to(".intro-p", {
+//   scrollTrigger: {
+//     trigger: ".intro-p",
+//     scrub: 0.7,
+//     start: "-20% center",
+//   },
+//   y: 200,
+//   opacity: 0,
+// });
+
 // --------------------------------
 // About Section In-View Animation
 // --------------------------------
@@ -314,6 +355,7 @@ gsap.from(".aboutInView", {
   y: 50,
   opacity: 0,
 });
+
 // --------------------------------
 // Projects Section In-View Animation
 // --------------------------------
@@ -343,6 +385,7 @@ gsap.from(".project-line", {
   scaleX: 0,
   ease: "power2.inOut",
 });
+
 // --------------------------------
 // Contact Section In-View Animation
 // --------------------------------
@@ -359,6 +402,7 @@ gsap.from(".contactInView", {
   y: 35,
   opacity: 0,
 });
+
 // --------------------------------
 // Star Animation
 // --------------------------------
@@ -383,6 +427,7 @@ gsap.to(".contact-star", {
   },
   rotate: 90,
 });
+
 // --------------------------------
 // Arrow-down Animation
 // --------------------------------
@@ -391,6 +436,7 @@ gsap.to(".arrow-down", {
   repeat: -1,
   yoyo: true,
 });
+
 // --------------------------------
 // Alter BG Color
 // --------------------------------
@@ -409,6 +455,7 @@ sections.forEach((section, i) => {
     },
   });
 });
+
 // --------------------------------
 // Button Functionalities
 // --------------------------------
